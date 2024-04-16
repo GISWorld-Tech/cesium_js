@@ -72,7 +72,7 @@ module.exports = {
 
 ## Security Warning
 
-This loader is primarily meant for development. The default settings are not safe for production environments. See the [recommended example configuration](#recommended) and the section on [nonces](#nonce) for details.
+This loader is primarily meant for development. The default settings are not safe for production environments. See the [recommended example configuration](#recommend) and the section on [nonces](#nonce) for details.
 
 ## Options
 
@@ -119,13 +119,13 @@ Example with Locals (CSS Modules):
 **component-with-css-modules.js**
 
 ```js
-import styles from "./styles.css";
+import * as styles from "./styles.css";
 
 const divElement = document.createElement("div");
 divElement.className = styles["my-class"];
 ```
 
-All locals (class names) stored in imported object.
+All local variables (class names) are exported as named exports. To achieve this behaviour you also have to setup `modules` option for `css-loader`. For more information consult with `css-loader` [`documentation`](https://github.com/webpack-contrib/css-loader).
 
 **webpack.config.js**
 
@@ -138,7 +138,11 @@ module.exports = {
         use: [
           // The `injectType`  option can be avoided because it is default behaviour
           { loader: "style-loader", options: { injectType: "styleTag" } },
-          "css-loader",
+          {
+            loader: "css-loader",
+            // Uncomment it if you want to use CSS modules
+            // options: { modules: true }
+          },
         ],
       },
     ],
@@ -178,13 +182,13 @@ import "./styles.css";
 **component-with-css-modules.js**
 
 ```js
-import styles from "./styles.css";
+import * as styles from "./styles.css";
 
 const divElement = document.createElement("div");
 divElement.className = styles["my-class"];
 ```
 
-All locals (class names) stored in imported object.
+All local variables (class names) are exported as named exports. To achieve this behaviour you also have to setup `modules` option for `css-loader`. For more information consult with `css-loader` [`documentation`](https://github.com/webpack-contrib/css-loader).
 
 **webpack.config.js**
 
@@ -199,7 +203,11 @@ module.exports = {
             loader: "style-loader",
             options: { injectType: "singletonStyleTag" },
           },
-          "css-loader",
+          {
+            loader: "css-loader",
+            // Uncomment it if you want to use CSS modules
+            // options: { modules: true }
+          },
         ],
       },
     ],
@@ -245,15 +253,15 @@ styles.use();
 **component-with-css-modules.js**
 
 ```js
-import styles from "./styles.lazy.css";
+import styles, { "my-class" as myClass } from "./styles.lazy.css";
 
 styles.use();
 
 const divElement = document.createElement("div");
-divElement.className = styles.locals["my-class"];
+divElement.className = myClass;
 ```
 
-All locals (class names) stored in `locals` property of imported object.
+All local variables (class names) are exported as named exports. To achieve this behaviour you also have to setup `modules` option for `css-loader`. For more information consult with `css-loader` [`documentation`](https://github.com/webpack-contrib/css-loader).
 
 **webpack.config.js**
 
@@ -270,7 +278,11 @@ module.exports = {
         test: /\.lazy\.css$/i,
         use: [
           { loader: "style-loader", options: { injectType: "lazyStyleTag" } },
-          "css-loader",
+          {
+            loader: "css-loader",
+            // Uncomment it if you want to use CSS modules
+            // options: { modules: true }
+          },
         ],
       },
     ],
@@ -316,15 +328,15 @@ styles.use();
 **component-with-css-modules.js**
 
 ```js
-import styles from "./styles.lazy.css";
+import styles, { "my-class" as myClass } from "./styles.lazy.css";
 
 styles.use();
 
 const divElement = document.createElement("div");
-divElement.className = styles.locals["my-class"];
+divElement.className = myClass;
 ```
 
-All locals (class names) stored in `locals` property of imported object.
+All local variables (class names) are exported as named exports. To achieve this behaviour you also have to setup `modules` option for `css-loader`. For more information consult with `css-loader` [`documentation`](https://github.com/webpack-contrib/css-loader).
 
 **webpack.config.js**
 
@@ -344,7 +356,11 @@ module.exports = {
             loader: "style-loader",
             options: { injectType: "lazySingletonStyleTag" },
           },
-          "css-loader",
+          {
+            loader: "css-loader",
+            // Uncomment it if you want to use CSS modules
+            // options: { modules: true }
+          },
         ],
       },
     ],
@@ -420,7 +436,7 @@ If defined, the `style-loader` will attach given attributes with their values on
 **component.js**
 
 ```js
-import style from "./file.css";
+import "./file.css";
 ```
 
 **webpack.config.js**
@@ -450,9 +466,7 @@ module.exports = {
 Type:
 
 ```ts
-type insert =
-  | string
-  | ((htmlElement: HTMLElement, options: Record<string, any>) => void);
+type insert = string;
 ```
 
 Default: `head`
@@ -462,9 +476,7 @@ This will cause CSS created by the loader to take priority over CSS already pres
 You can use other values if the standard behavior is not suitable for you, but we do not recommend doing this.
 If you target an [iframe](https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement) make sure you have sufficient access rights, the styles will be injected into the content document head.
 
-#### `string`
-
-##### `Selector`
+#### `Selector`
 
 Allows to setup custom [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) where styles inject into the DOM.
 
@@ -491,7 +503,7 @@ module.exports = {
 };
 ```
 
-##### `Absolute path to function`
+#### `Absolute path to function`
 
 Allows to setup absolute path to custom function that allows to override default behavior and insert styles at any position.
 
@@ -515,7 +527,7 @@ module.exports = {
           {
             loader: "style-loader",
             options: {
-              insert: require.resolve("modulePath"),
+              insert: require.resolve("./path-to-insert-module"),
             },
           },
           "css-loader",
@@ -528,17 +540,32 @@ module.exports = {
 
 A new `<style>`/`<link>` elements will be inserted into at bottom of `body` tag.
 
-#### `function`
+Examples:
 
-Allows to override default behavior and insert styles at any position.
+Insert styles at top of `head` tag:
 
-> **Warning**
->
-> Do not forget that this code will be used in the browser and not all browsers support latest ECMA features like `let`, `const`, `arrow function expression` and etc, we recommend use only ECMA 5 features, but it is depends what browsers you want to support
+**insert-function.js**
 
-> **Warning**
->
-> Do not forget that some DOM methods may not be available in older browsers, we recommended use only [DOM core level 2 properties](https://caniuse.com/#search=DOM%20Core), but it is depends what browsers you want to support
+```js
+function insertAtTop(element) {
+  var parent = document.querySelector("head");
+  // eslint-disable-next-line no-underscore-dangle
+  var lastInsertedElement = window._lastElementInsertedByStyleLoader;
+
+  if (!lastInsertedElement) {
+    parent.insertBefore(element, parent.firstChild);
+  } else if (lastInsertedElement.nextSibling) {
+    parent.insertBefore(element, lastInsertedElement.nextSibling);
+  } else {
+    parent.appendChild(element);
+  }
+
+  // eslint-disable-next-line no-underscore-dangle
+  window._lastElementInsertedByStyleLoader = element;
+}
+
+module.exports = insertAtTop;
+```
 
 **webpack.config.js**
 
@@ -552,23 +579,7 @@ module.exports = {
           {
             loader: "style-loader",
             options: {
-              insert: function insertAtTop(element) {
-                var parent = document.querySelector("head");
-                // eslint-disable-next-line no-underscore-dangle
-                var lastInsertedElement =
-                  window._lastElementInsertedByStyleLoader;
-
-                if (!lastInsertedElement) {
-                  parent.insertBefore(element, parent.firstChild);
-                } else if (lastInsertedElement.nextSibling) {
-                  parent.insertBefore(element, lastInsertedElement.nextSibling);
-                } else {
-                  parent.appendChild(element);
-                }
-
-                // eslint-disable-next-line no-underscore-dangle
-                window._lastElementInsertedByStyleLoader = element;
-              },
+              insert: require.resolve("./insert-function"),
             },
           },
           "css-loader",
@@ -579,9 +590,19 @@ module.exports = {
 };
 ```
 
-Insert styles at top of `head` tag.
-
 You can pass any parameters to `style.use(options)` and this value will be passed to `insert` and `styleTagTransform` functions.
+
+**insert-function.js**
+
+```js
+function insertIntoTarget(element, options) {
+  var parent = options.target || document.head;
+
+  parent.appendChild(element);
+}
+
+module.exports = insertIntoTarget;
+```
 
 **webpack.config.js**
 
@@ -599,12 +620,8 @@ module.exports = {
               // Do not forget that this code will be used in the browser and
               // not all browsers support latest ECMA features like `let`, `const`, `arrow function expression` and etc,
               // we recommend use only ECMA 5 features,
-              // but it is depends what browsers you want to support
-              insert: function insertIntoTarget(element, options) {
-                var parent = options.target || document.head;
-
-                parent.appendChild(element);
-              },
+              // but it depends what browsers you want to support
+              insert: require.resolve("./insert-function.js"),
             },
           },
           "css-loader",
@@ -669,13 +686,7 @@ export default CustomSquare;
 Type:
 
 ```ts
-type styleTagTransform =
-  | string
-  | ((
-      css: string,
-      styleElement: HTMLStyleElement,
-      options: Record<string, any>
-    ) => void);
+type styleTagTransform = string;
 ```
 
 Default: `undefined`
@@ -688,41 +699,9 @@ Allows to setup absolute path to custom function that allows to override default
 >
 > Do not forget that this code will be used in the browser and not all browsers support latest ECMA features like `let`, `const`, `arrow function expression` and etc, we recommend use only ECMA 5 features, but it is depends what browsers you want to support
 
-**webpack.config.js**
-
-```js
-module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: [
-          {
-            loader: "style-loader",
-            options: {
-              injectType: "styleTag",
-              styleTagTransform: require.resolve("module-path"),
-            },
-          },
-          "css-loader",
-        ],
-      },
-    ],
-  },
-};
-```
-
-#### `function`
-
-Transform tag and css when insert 'style' tag into the DOM.
-
 > **Warning**
 >
-> Do not forget that this code will be used in the browser and not all browsers support latest ECMA features like `let`, `const`, `arrow function expression` and etc, we recommend use only ECMA 5 features, but it is depends what browsers you want to support
-
-> **Warning**
->
-> Do not forget that some DOM methods may not be available in older browsers, we recommended use only [DOM core level 2 properties](https://caniuse.com/#search=DOM%20Core), but it is depends what browsers you want to support
+> Do not forget that some DOM methods may not be available in older browsers, we recommended use only [DOM core level 2 properties](https://caniuse.com/#search=DOM%20Core), but it depends what browsers you want to support
 
 **webpack.config.js**
 
@@ -737,12 +716,7 @@ module.exports = {
             loader: "style-loader",
             options: {
               injectType: "styleTag",
-              styleTagTransform: function (css, style) {
-                // Do something ...
-                style.innerHTML = `${css}.modify{}\n`;
-
-                document.head.appendChild(style);
-              },
+              styleTagTransform: require.resolve("style-tag-transform-code"),
             },
           },
           "css-loader",
@@ -885,33 +859,42 @@ module.exports = {
 
 > **Warning**
 >
-> Names of locals are converted to `camelCase`.
-
-> **Warning**
->
 > It is not allowed to use JavaScript reserved words in css class names.
 
 > **Warning**
 >
-> Options `esModule` and `modules.namedExport` in `css-loader` should be enabled.
+> Options `esModule` and `modules.namedExport` in `css-loader` should be enabled (by default for `css-loader@7` it is true).
 
 **styles.css**
 
 ```css
-.foo-baz {
+.fooBaz {
   color: red;
 }
 .bar {
   color: blue;
+}
+.my-class {
+  color: green;
 }
 ```
 
 **index.js**
 
 ```js
-import { fooBaz, bar } from "./styles.css";
+import { fooBaz, bar, "my-class" as myClass } from "./styles.css";
 
-console.log(fooBaz, bar);
+console.log(fooBaz, bar, myClass);
+```
+
+Or:
+
+**index.js**
+
+```js
+import * as styles from "./styles.css";
+
+console.log(styles.fooBaz, styles.bar, styles["my-class"]);
 ```
 
 You can enable a ES module named export using:
@@ -1074,7 +1057,28 @@ The loader generate:
 
 #### Insert styles at top
 
-Inserts styles at top of `head` tag.
+Insert styles at top of `head` tag.
+
+**insert-function.js**
+
+```js
+function insertAtTop(element) {
+  var parent = document.querySelector("head");
+  var lastInsertedElement = window._lastElementInsertedByStyleLoader;
+
+  if (!lastInsertedElement) {
+    parent.insertBefore(element, parent.firstChild);
+  } else if (lastInsertedElement.nextSibling) {
+    parent.insertBefore(element, lastInsertedElement.nextSibling);
+  } else {
+    parent.appendChild(element);
+  }
+
+  window._lastElementInsertedByStyleLoader = element;
+}
+
+module.exports = insertAtTop;
+```
 
 **webpack.config.js**
 
@@ -1088,21 +1092,7 @@ module.exports = {
           {
             loader: "style-loader",
             options: {
-              insert: function insertAtTop(element) {
-                var parent = document.querySelector("head");
-                var lastInsertedElement =
-                  window._lastElementInsertedByStyleLoader;
-
-                if (!lastInsertedElement) {
-                  parent.insertBefore(element, parent.firstChild);
-                } else if (lastInsertedElement.nextSibling) {
-                  parent.insertBefore(element, lastInsertedElement.nextSibling);
-                } else {
-                  parent.appendChild(element);
-                }
-
-                window._lastElementInsertedByStyleLoader = element;
-              },
+              insert: require.resolve("./insert-function.js"),
             },
           },
           "css-loader",
@@ -1117,6 +1107,29 @@ module.exports = {
 
 Inserts styles before `#id` element.
 
+**insert-function.js**
+
+```js
+function insertBeforeAt(element) {
+  const parent = document.querySelector("head");
+  const target = document.querySelector("#id");
+
+  const lastInsertedElement = window._lastElementInsertedByStyleLoader;
+
+  if (!lastInsertedElement) {
+    parent.insertBefore(element, target);
+  } else if (lastInsertedElement.nextSibling) {
+    parent.insertBefore(element, lastInsertedElement.nextSibling);
+  } else {
+    parent.appendChild(element);
+  }
+
+  window._lastElementInsertedByStyleLoader = element;
+}
+
+module.exports = insertBeforeAt;
+```
+
 **webpack.config.js**
 
 ```js
@@ -1129,23 +1142,7 @@ module.exports = {
           {
             loader: "style-loader",
             options: {
-              insert: function insertBeforeAt(element) {
-                const parent = document.querySelector("head");
-                const target = document.querySelector("#id");
-
-                const lastInsertedElement =
-                  window._lastElementInsertedByStyleLoader;
-
-                if (!lastInsertedElement) {
-                  parent.insertBefore(element, target);
-                } else if (lastInsertedElement.nextSibling) {
-                  parent.insertBefore(element, lastInsertedElement.nextSibling);
-                } else {
-                  parent.appendChild(element);
-                }
-
-                window._lastElementInsertedByStyleLoader = element;
-              },
+              insert: require.resolve("./insert-function.js"),
             },
           },
           "css-loader",
@@ -1159,6 +1156,18 @@ module.exports = {
 #### Custom Elements (Shadow DOM)
 
 You can define custom target for your styles for the `lazyStyleTag` type.
+
+**insert-function.js**
+
+```js
+function insertIntoTarget(element, options) {
+  var parent = options.target || document.head;
+
+  parent.appendChild(element);
+}
+
+module.exports = insertIntoTarget;
+```
 
 **webpack.config.js**
 
@@ -1177,11 +1186,7 @@ module.exports = {
               // not all browsers support latest ECMA features like `let`, `const`, `arrow function expression` and etc,
               // we recommend use only ECMA 5 features,
               // but it is depends what browsers you want to support
-              insert: function insertIntoTarget(element, options) {
-                var parent = options.target || document.head;
-
-                parent.appendChild(element);
-              },
+              insert: require.resolve("./insert-function.js"),
             },
           },
           "css-loader",

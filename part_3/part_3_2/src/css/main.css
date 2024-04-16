@@ -7,9 +7,3 @@ body,
   padding: 0;
   overflow: hidden;
 }
-.text {
-  color: rgb(39, 176, 255);
-  font-weight: bolder;
-  font-size: 28px;
-  margin: 10px 100px;
-}

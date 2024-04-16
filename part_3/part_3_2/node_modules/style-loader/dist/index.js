@@ -29,8 +29,7 @@ loader.pitch = function pitch(request) {
   if (options.base) {
     runtimeOptions.base = options.base;
   }
-  const insertType = typeof options.insert === "function" ? "function" : options.insert && _path.default.isAbsolute(options.insert) ? "module-path" : "selector";
-  const styleTagTransformType = typeof options.styleTagTransform === "function" ? "function" : options.styleTagTransform && _path.default.isAbsolute(options.styleTagTransform) ? "module-path" : "default";
+  const insertType = options.insert && _path.default.isAbsolute(options.insert) ? "module-path" : "selector";
   switch (injectType) {
     case "linkTag":
       {
@@ -70,7 +69,7 @@ ${esModule ? "export default {}" : ""}`;
       ${(0, _utils.getImportInsertBySelectorCode)(esModule, this, insertType, options)}
       ${(0, _utils.getSetAttributesCode)(esModule, this, options)}
       ${(0, _utils.getImportInsertStyleElementCode)(esModule, this)}
-      ${(0, _utils.getStyleTagTransformFnCode)(esModule, this, options, isSingleton, styleTagTransformType)}
+      ${(0, _utils.getStyleTagTransformFnCode)(esModule, this, options, isSingleton)}
       ${(0, _utils.getImportStyleContentCode)(esModule, this, request)}
       ${isAuto ? (0, _utils.getImportIsOldIECode)(esModule, this) : ""}
       ${esModule ? `if (content && content.locals) {
@@ -127,7 +126,7 @@ ${(0, _utils.getExportLazyStyleCode)(esModule, this, request)}
       ${(0, _utils.getImportInsertBySelectorCode)(esModule, this, insertType, options)}
       ${(0, _utils.getSetAttributesCode)(esModule, this, options)}
       ${(0, _utils.getImportInsertStyleElementCode)(esModule, this)}
-      ${(0, _utils.getStyleTagTransformFnCode)(esModule, this, options, isSingleton, styleTagTransformType)}
+      ${(0, _utils.getStyleTagTransformFnCode)(esModule, this, options, isSingleton)}
       ${(0, _utils.getImportStyleContentCode)(esModule, this, request)}
       ${isAuto ? (0, _utils.getImportIsOldIECode)(esModule, this) : ""}
       ${esModule ? "" : `content = content.__esModule ? content.default : content;`}
