@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  cesiumjs:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/cesiumjs/src
+      - ./node_modules:/cesiumjs/node_modules
+      - ./dist:/cesiumjs/dist

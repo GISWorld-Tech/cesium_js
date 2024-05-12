@@ -1,0 +1,23 @@
+{
+  "name": "cesiumjs_webpack_tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server --config webpack.config.js --open"
+  },
+  "author": "mohammad",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cesium": "^1.117.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
