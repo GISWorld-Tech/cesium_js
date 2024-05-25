@@ -1,10 +1,12 @@
-import { cesiumAccessToken } from "./js/CesiumConfig.js";
-import { locations } from "./js/Locations.js";
-import { flyToLocation } from "./js/CesiumViewer.js";
+import { accessToken } from "./js/CesiumConfig.js";
+import { locations } from "./js/Location.js";
 import { createSelectElement } from "./js/DropDown.js";
+import { flyToLocation } from "./js/CeiumViewer.js";
 
-// Your access token can be found at: https://cesium.com/ion/tokens.
-Cesium.Ion.defaultAccessToken = cesiumAccessToken;
+// Your access token can be found at: https://ion.cesium.com/tokens.
+// This is the default access token from your ion account
+
+Cesium.Ion.defaultAccessToken = accessToken;
 
 // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
 const viewer = new Cesium.Viewer("cesiumContainer", {
@@ -15,18 +17,15 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 const buildingTileset = await Cesium.createOsmBuildingsAsync();
 viewer.scene.primitives.add(buildingTileset);
 
-flyToLocation(viewer, locations[0].coordinate);
-
-// Create select options from location keys
 const options = Object.keys(locations).map((key) => ({
   value: key,
-  text: locations[key].cityName,
+  textContent: locations[key].cityName,
 }));
 
-// Create the select element in the toolbar and get the reference
 const dropdown = createSelectElement(options, "toolbar");
 
-// Add event listener for select change if dropdown was successfully created
+flyToLocation(viewer, locations[0].coordinate);
+
 if (dropdown) {
   dropdown.addEventListener("change", (event) => {
     const selectedIndex = event.target.value;
