@@ -21,7 +21,7 @@ export class MovingObject {
     this.viewer.clock.startTime = this.start.clone();
     this.viewer.clock.stopTime = this.stop.clone();
     this.viewer.clock.currentTime = this.start.clone();
-    //Loop at the end
+    this.viewer.clock.shouldAnimate = true;
     this.viewer.clock.clockRange = Cesium.ClockRange.LOOP_STOP;
     this.viewer.clock.multiplier = 4;
 
@@ -40,7 +40,7 @@ export class MovingObject {
       console.log(time);
       let lon = coordArray.features[i].geometry.coordinates[0];
       let lat = coordArray.features[i].geometry.coordinates[1];
-      let alt = 0.0;
+      let alt = coordArray.features[i].properties.height;
       const position = Cesium.Cartesian3.fromDegrees(lon, lat, alt);
       property.addSample(time, position);
     }
@@ -48,6 +48,7 @@ export class MovingObject {
   };
 
   addMovableEntityToViewer = (url) => {
+    console.log("Mohammad");
     this.viewer.entities.add({
       //Set the entity availability to the same interval as the simulation time.
       availability: new Cesium.TimeIntervalCollection([
@@ -68,7 +69,7 @@ export class MovingObject {
       //Load the Cesium plane model to represent the entity
       model: {
         uri: url,
-        id: "traktor",
+        id: "aircraft",
       },
     });
   };
