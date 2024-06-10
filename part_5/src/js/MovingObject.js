@@ -8,8 +8,6 @@ export class MovingObject {
       this.flightPath.features.length,
       new Cesium.JulianDate()
     );
-    console.log(this.start);
-    console.log(this.stop);
     this._configTime();
     this.movableObjPosition = this._computeTimePositionadjastment(
       this.flightPath
@@ -23,7 +21,7 @@ export class MovingObject {
     this.viewer.clock.currentTime = this.start.clone();
     this.viewer.clock.shouldAnimate = true;
     this.viewer.clock.clockRange = Cesium.ClockRange.LOOP_STOP;
-    this.viewer.clock.multiplier = 4;
+    this.viewer.clock.multiplier = 2;
 
     //Set timeline to simulation bounds
     this.viewer.timeline.zoomTo(this.start, this.stop);
@@ -37,7 +35,6 @@ export class MovingObject {
         i,
         new Cesium.JulianDate()
       );
-      console.log(time);
       let lon = coordArray.features[i].geometry.coordinates[0];
       let lat = coordArray.features[i].geometry.coordinates[1];
       let alt = coordArray.features[i].properties.height;
@@ -48,8 +45,7 @@ export class MovingObject {
   };
 
   addMovableEntityToViewer = (url) => {
-    console.log("Mohammad");
-    this.viewer.entities.add({
+    const aircraftEntity = this.viewer.entities.add({
       //Set the entity availability to the same interval as the simulation time.
       availability: new Cesium.TimeIntervalCollection([
         new Cesium.TimeInterval({
@@ -57,6 +53,8 @@ export class MovingObject {
           stop: this.stop,
         }),
       ]),
+
+      viewFrom: new Cesium.Cartesian3(-50, 0.0, 50.0),
 
       //Use our computed positions
       position: this.movableObjPosition,
@@ -72,5 +70,7 @@ export class MovingObject {
         id: "aircraft",
       },
     });
+
+    this.viewer.trackedEntity = aircraftEntity;
   };
 }
