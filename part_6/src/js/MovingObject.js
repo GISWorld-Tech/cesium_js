@@ -33,7 +33,7 @@ export class MovingObject {
       );
       let lon = feature.geometry.coordinates[0];
       let lat = feature.geometry.coordinates[1];
-      let alt = feature.properties.height;
+      let alt = feature.properties.height + feature.geometry.coordinates[2];
       const position = Cesium.Cartesian3.fromDegrees(lon, lat, alt);
       // Store the position along with its timestamp.
       // Here we add the positions all upfront, but these can be added at run-time as samples are received from a server.
@@ -60,7 +60,7 @@ export class MovingObject {
       orientation: new Cesium.VelocityOrientationProperty(
         this.positionProperty
       ),
-    //   path: new Cesium.PathGraphics({ width: 3 }),
+      path: new Cesium.PathGraphics({ width: 3 }),
       viewFrom: new Cesium.Cartesian3(-100, 0, 100)
     });
 
