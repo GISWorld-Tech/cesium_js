@@ -32,5 +32,5 @@ document
   .getElementById("btnautomobile")
   .addEventListener("click", () => addMovableEntity("automobile"));
 document
-  .getElementById("btnradio2")
+  .getElementById("btnaircraft")
   .addEventListener("click", () => addMovableEntity("aircraft", 50, 20));
