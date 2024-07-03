@@ -1,9 +1,11 @@
 export class MovingObject {
-  constructor(viewer, flightData, timeStepInSeconds) {
+  constructor(viewer, flightData, timeStepInSeconds, height = 0, speed = 2) {
     this.viewer = viewer;
+    this.height = height;
+    this.speed = speed;
     this.flightData = flightData;
     this.timeStepInSeconds = timeStepInSeconds;
-    this.start = Cesium.JulianDate.fromIso8601("2024-06-10T23:10:00Z");
+    this.start = Cesium.JulianDate.fromIso8601("2024-07-03T23:10:00Z");
     this.stop = Cesium.JulianDate.addSeconds(
       this.start,
       this.flightData.features.length * this.timeStepInSeconds,
@@ -19,7 +21,7 @@ export class MovingObject {
     this.viewer.clock.stopTime = this.stop.clone();
     this.viewer.clock.currentTime = this.start.clone();
     this.viewer.timeline.zoomTo(this.start, this.stop);
-    this.viewer.clock.multiplier = 2;
+    this.viewer.clock.multiplier = this.speed;
     this.viewer.clock.shouldAnimate = true;
   };
 
@@ -47,12 +49,12 @@ export class MovingObject {
         const position = Cesium.Cartesian3.fromRadians(
           cartographic.longitude,
           cartographic.latitude,
-          cartographic.height
+          cartographic.height + this.height
         );
         this.positionProperty.addSample(time, position);
 
         this.viewer.entities.add({
-          description: `Location: (${cartographic.longitude}, ${cartographic.latitude}, ${cartographic.height})`,
+          description: `Location: (${cartographic.longitude}, ${cartographic.latitude}, ${cartographic.height} + this.height)`,
           position: position,
           point: { pixelSize: 5, color: Cesium.Color.RED },
         });
@@ -69,9 +71,11 @@ export class MovingObject {
       ]),
       position: this.positionProperty,
       model: { uri: uri },
-      orientation: new Cesium.VelocityOrientationProperty(this.positionProperty),
-      path: new Cesium.PathGraphics({ width: 3 }),
-      viewFrom: new Cesium.Cartesian3(-100, 0, 100),
+      orientation: new Cesium.VelocityOrientationProperty(
+        this.positionProperty
+      ),
+      path: new Cesium.PathGraphics({ width: 1 }),
+      viewFrom: new Cesium.Cartesian3(0, 30, 30),
     });
 
     this.viewer.trackedEntity = airplaneEntity;

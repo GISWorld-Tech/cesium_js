@@ -3,6 +3,7 @@ const accessToken =
 
 const uriPath = {
   aircraft: "../data/glb/aircraft.glb",
+  automobile: "../data/glb/benz_gls.glb"
 };
 
 export { accessToken, uriPath };
