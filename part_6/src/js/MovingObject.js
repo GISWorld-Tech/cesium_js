@@ -1,5 +1,6 @@
 export class MovingObject {
   constructor(viewer, flightData, timeStepInSeconds, height = 0, speed = 2) {
+    // new 1
     this.viewer = viewer;
     this.height = height;
     this.speed = speed;
@@ -12,6 +13,7 @@ export class MovingObject {
       new Cesium.JulianDate()
     );
     this._configTime();
+    // new 2
     this.positionProperty = new Cesium.SampledPositionProperty();
     this._computeTimePositionAdjustment();
   }
@@ -32,36 +34,31 @@ export class MovingObject {
       return Cesium.Cartographic.fromDegrees(lon, lat);
     });
 
-    try {
-      // Sample the terrain to get the heights
-      const updatedPositions = await Cesium.sampleTerrainMostDetailed(
-        this.viewer.terrainProvider,
-        positions
+    // Sample the terrain to get the heights
+    const updatedPositions = await Cesium.sampleTerrainMostDetailed(
+      this.viewer.terrainProvider,
+      positions
+    );
+
+    updatedPositions.forEach((cartographic, i) => {
+      const time = Cesium.JulianDate.addSeconds(
+        this.start,
+        i * this.timeStepInSeconds,
+        new Cesium.JulianDate()
       );
+      const position = Cesium.Cartesian3.fromRadians(
+        cartographic.longitude,
+        cartographic.latitude,
+        cartographic.height + this.height
+      );
+      this.positionProperty.addSample(time, position);
 
-      updatedPositions.forEach((cartographic, i) => {
-        const feature = this.flightData.features[i];
-        const time = Cesium.JulianDate.addSeconds(
-          this.start,
-          i * this.timeStepInSeconds,
-          new Cesium.JulianDate()
-        );
-        const position = Cesium.Cartesian3.fromRadians(
-          cartographic.longitude,
-          cartographic.latitude,
-          cartographic.height + this.height
-        );
-        this.positionProperty.addSample(time, position);
-
-        this.viewer.entities.add({
-          description: `Location: (${cartographic.longitude}, ${cartographic.latitude}, ${cartographic.height} + this.height)`,
-          position: position,
-          point: { pixelSize: 5, color: Cesium.Color.RED },
-        });
+      this.viewer.entities.add({
+        description: `Location: (${cartographic.longitude}, ${cartographic.latitude}, ${cartographic.height} + this.height)`,
+        position: position,
+        point: { pixelSize: 5, color: Cesium.Color.RED },
       });
-    } catch (error) {
-      console.error("Error sampling terrain:", error);
-    }
+    });
   };
 
   addMovableEntityToViewer = (uri) => {
