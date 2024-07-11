@@ -1,6270 +1,5245 @@
 export const flightData = {
   type: "FeatureCollection",
-  name: "flightData",
+  name: "flightData3",
   crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
   features: [
     {
       type: "Feature",
-      properties: { fid: 1, height: 0 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145070271089445, 48.784485434504866],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 2, height: 1 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145206127939311, 48.784479709537045],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 3, height: 1 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14534198475792, 48.784473984409125],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 4, height: 2 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145416519796266, 48.784402363487374],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 5, height: 2 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145485550441991, 48.784324827783045],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 6, height: 3 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145554664562495, 48.784247324609417],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 7, height: 3 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145623809818662, 48.784169833594952],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 8, height: 4 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145696906754038, 48.784094306237833],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 9, height: 4 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145790365174378, 48.784028896578384],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 10, height: 5 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145883823351838, 48.783963486842659],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 11, height: 5 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.145977281286415, 48.783898077030635],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 12, height: 6 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.1460797467495, 48.783839045669019],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 13, height: 6 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146184940733134, 48.783781946485668],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 14, height: 7 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146313519279612, 48.783803512005235],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 15, height: 7 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146443582357765, 48.783830070814645],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 16, height: 8 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146573645572879, 48.783856629477029],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 17, height: 8 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146677524493791, 48.78391372555852],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 18, height: 9 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146778843874987, 48.78397380688471],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 19, height: 9 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146880163498027, 48.784033888120966],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 20, height: 10 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.146987242450692, 48.784048349414569],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 21, height: 10 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14710222624897, 48.784000192725252],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 22, height: 11 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147217209827073, 48.783952035921025],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 23, height: 11 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14728824689667, 48.78387764521392],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 24, height: 12 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147349096378642, 48.783797173091209],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 25, height: 12 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147409945666263, 48.783716700935443],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 26, height: 13 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147470794759538, 48.783636228746616],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 27, height: 13 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147531643658462, 48.78355575652472],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 28, height: 14 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147594948151944, 48.783476268015541],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 29, height: 14 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147674763020587, 48.783403393311879],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 30, height: 15 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147754577658231, 48.783330518552269],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 31, height: 15 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147834392064878, 48.783257643736682],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 32, height: 16 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147914206240529, 48.783184768865127],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 33, height: 16 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.147994020185182, 48.783111893937622],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 34, height: 17 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148073833898845, 48.783039018954149],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 35, height: 17 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148153647381511, 48.782966143914706],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 36, height: 18 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148233460633188, 48.782893268819286],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 37, height: 18 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148317461217577, 48.782822682696548],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 38, height: 19 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148410815700842, 48.782757209713807],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 39, height: 19 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148504169941271, 48.78269173665494],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 40, height: 20 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148597523938864, 48.782626263519965],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 41, height: 20 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148690877693628, 48.782560790308864],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 42, height: 21 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148784231205557, 48.782495317021649],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 43, height: 21 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.148877584474656, 48.782429843658328],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 44, height: 22 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14897731375153, 48.782368707311448],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 45, height: 22 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149079040021089, 48.782308929384634],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 46, height: 23 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149180766048991, 48.782249151367644],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 47, height: 23 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14928249183524, 48.782189373260486],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 48, height: 24 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149384217379835, 48.782129595063168],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 49, height: 24 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149485942682777, 48.782069816775703],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 50, height: 25 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149568599684969, 48.781998995433952],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 51, height: 25 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149644923440485, 48.781924506368547],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 52, height: 26 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.149721246970254, 48.781850017251877],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 53, height: 26 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14979757027427, 48.781775528083905],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 54, height: 27 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14987389335254, 48.781701038864661],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 55, height: 27 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.14995021620506, 48.781626549594151],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 56, height: 28 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150007089144017, 48.781547856013844],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 57, height: 28 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150012129399331, 48.781457958243934],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 58, height: 29 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150017169637009, 48.78136806047241],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 59, height: 29 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150022209857051, 48.78127816269928],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 60, height: 30 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150027250059461, 48.781188264924538],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 61, height: 30 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150032290244237, 48.781098367148161],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 62, height: 31 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150037330411376, 48.781008469370192],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 63, height: 31 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150042370560882, 48.780918571590618],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 64, height: 32 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150047410692755, 48.780828673809431],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 65, height: 32 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150052450806992, 48.78073877602661],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 66, height: 33 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150057490903597, 48.780648878242197],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 67, height: 33 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.15006253098257, 48.780558980456178],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 68, height: 34 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150067571043905, 48.780469082668539],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 69, height: 34 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.15007261108761, 48.780379184879287],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 70, height: 35 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.15007765111368, 48.780289287088422],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 71, height: 35 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150082691122119, 48.780199389295959],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 72, height: 36 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150087731112924, 48.780109491501868],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 73, height: 36 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150092771086095, 48.780019593706186],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 74, height: 37 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150127119799325, 48.779933560190493],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 75, height: 37 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150174663522961, 48.77984926640211],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 76, height: 38 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150222207087657, 48.77976497259305],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 77, height: 38 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150269750493413, 48.779680678763292],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 78, height: 39 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150317293740232, 48.779596384912836],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 79, height: 39 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150364836828112, 48.779512091041688],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 80, height: 40 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150412379757055, 48.779427797149864],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 81, height: 40 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150459922527066, 48.779343503237349],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 82, height: 41 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150507465138142, 48.779259209304143],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 83, height: 41 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150555007590285, 48.779174915350254],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 84, height: 42 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150602549883494, 48.779090621375659],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 85, height: 42 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150650092017775, 48.779006327380387],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 86, height: 43 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150697633993122, 48.77892203336441],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 87, height: 43 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150745175809543, 48.778837739327763],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 88, height: 44 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150792717467036, 48.778753445270425],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 89, height: 44 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150840258965603, 48.778669151192382],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 90, height: 45 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150887800305243, 48.778584857093669],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 91, height: 45 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150935341485958, 48.778500562974273],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 92, height: 46 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.150982882507751, 48.778416268834171],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 93, height: 46 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151030423370623, 48.778331974673385],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 94, height: 47 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151077964074572, 48.778247680491916],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 95, height: 47 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.1511255046196, 48.778163386289755],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 96, height: 48 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151173045005708, 48.778079092066911],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 97, height: 48 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151233389419147, 48.778000310049102],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 98, height: 49 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151330833471908, 48.777937499525684],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 99, height: 49 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151428277281514, 48.777874688919447],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 100, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151525720847966, 48.777811878230374],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 101, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151623164171264, 48.777749067458473],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 102, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151720607251409, 48.777686256603758],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 103, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151818050088405, 48.777623445666222],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 104, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.151915492682248, 48.777560634645866],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 105, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152012935032943, 48.777497823542674],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 106, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152110377140486, 48.777435012356676],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 107, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152207819004884, 48.777372201087843],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 108, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152305260626131, 48.777309389736196],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 109, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152402702004235, 48.777246578301735],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 110, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152500143139191, 48.777183766784425],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 111, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152597584031003, 48.777120955184337],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 112, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152695024679669, 48.777058143501407],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 113, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152792465085195, 48.776995331735662],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 114, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152888791022354, 48.7769317812485],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 115, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.152984121160099, 48.776867570710209],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 116, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153079451054685, 48.776803360092607],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 117, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153174780706118, 48.776739149395702],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 118, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153270110114395, 48.776674938619465],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 119, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153365439279517, 48.776610727763909],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 120, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153460768201487, 48.776546516829022],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 121, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153556096880306, 48.776482305814852],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 122, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153651425315971, 48.776418094721343],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 123, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153746753508488, 48.776353883548531],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 124, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153842081457853, 48.7762896722964],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 125, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.153937409164072, 48.776225460964959],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 126, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154032736627142, 48.7761612495542],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 127, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154128063847065, 48.776097038064123],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 128, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154223390823843, 48.776032826494742],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 129, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154318717557475, 48.77596861484605],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 130, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154414044047963, 48.775904403118055],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 131, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154509370295306, 48.775840191310735],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 132, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.15460469629951, 48.775775979424125],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 133, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154700022060569, 48.775711767458176],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 134, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154795347578489, 48.775647555412931],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 135, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154890672853268, 48.775583343288389],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 136, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.154985997884909, 48.775519131084508],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 137, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155081322673411, 48.775454918801351],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 138, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155176647218775, 48.775390706438884],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 139, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155271971521005, 48.775326493997099],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 140, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155367295580099, 48.77526228147601],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 141, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155462619396056, 48.775198068875618],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 142, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155557942968883, 48.775133856195922],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 143, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155653266298575, 48.775069643436915],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 144, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155748589385135, 48.775005430598625],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 145, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155843912228562, 48.774941217681004],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 146, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.155940588867447, 48.774878350416216],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 147, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156067045499311, 48.774845080548523],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 148, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156193501963781, 48.774811810542069],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 149, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156319958260852, 48.774778540396845],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 150, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156446414390526, 48.774745270112867],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 151, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156572870352798, 48.774711999690105],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 152, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156699326147674, 48.774678729128603],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 153, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156825781775149, 48.774645458428324],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 154, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.156952237235226, 48.774612187589305],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 155, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.157078692527898, 48.774578916611503],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 156, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.157205147653173, 48.774545645494953],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 157, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.157331602611043, 48.774512374239642],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 158, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.157458057401511, 48.774479102845554],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 159, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.157584512024577, 48.774445831312725],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 160, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.15771096648024, 48.774412559641128],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 161, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.1578374207685, 48.774379287830769],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 162, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.157963874889354, 48.774346015881655],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 163, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158090328842803, 48.774312743793807],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 164, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158216782628848, 48.774279471567176],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 165, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158343236247486, 48.774246199201805],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 166, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158469689698718, 48.774212926697672],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 167, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158596142982542, 48.774179654054784],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 168, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158722596098961, 48.774146381273134],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 169, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158849049047971, 48.774113108352743],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 170, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.158975501829573, 48.774079835293591],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 171, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159101954443765, 48.774046562095684],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 172, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159232190182479, 48.774030888655652],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 173, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159367660189758, 48.774039564984044],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 174, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159503130243339, 48.774048241153132],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 175, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159638600343222, 48.774056917162909],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 176, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159774070489402, 48.774065593013418],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 177, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.159909540681882, 48.774074268704624],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 178, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160045010920664, 48.774082944236547],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 179, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160180481205737, 48.774091619609166],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 180, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160315951537108, 48.774100294822489],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 181, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160451421914773, 48.774108969876529],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 182, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160586892338731, 48.774117644771252],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 183, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160722362808981, 48.774126319506699],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 184, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160857833325522, 48.774134994082843],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 185, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.160993303888354, 48.774143668499711],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 186, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161128774497472, 48.774152342757269],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 187, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161264245152879, 48.774161016855523],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 188, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161399715854573, 48.774169690794501],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 189, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161535186602551, 48.774178364574176],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 190, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161670657396813, 48.774187038194569],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 191, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161806128237357, 48.774195711655651],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 192, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.161941599124184, 48.774204384957436],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 193, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.16207707005729, 48.774213058099939],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 194, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.162212541036677, 48.774221731083117],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 195, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.16234801206234, 48.774230403907026],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 196, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.162483483134283, 48.774239076571639],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 197, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.162618954252501, 48.774247749076949],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 198, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.16275442541699, 48.774256421422962],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 199, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.162889896627757, 48.774265093609671],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 200, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163025367884794, 48.774273765637098],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 201, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163160839188103, 48.774282437505221],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 202, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163296310537683, 48.774291109214055],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 203, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.16343178193353, 48.774299780763585],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 204, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163567253375646, 48.774308452153797],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 205, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163702724864029, 48.774317123384733],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 206, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163838196398679, 48.774325794456381],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 207, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.163970714226958, 48.774344666797766],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 208, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164101457136725, 48.774369669450138],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 209, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164232200176, 48.774394671953957],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 210, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164362943344775, 48.7744196743092],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 211, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164493686643057, 48.774444676515898],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 212, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164624430070839, 48.774469678574029],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 213, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164755173628121, 48.774494680483592],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 214, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.164885917314907, 48.774519682244588],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 215, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165016661131192, 48.774544683857023],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 216, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165147405076974, 48.774569685320884],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 217, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165278149152256, 48.774594686636192],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 218, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165408893357034, 48.774619687802925],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 219, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.16553963769131, 48.774644688821091],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 220, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165670382155081, 48.774669689690683],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 221, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165801126748349, 48.774694690411721],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 222, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.165931871471109, 48.774719690984192],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 223, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166062616323362, 48.774744691408088],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 224, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166193361305108, 48.774769691683403],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 225, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166324106416345, 48.774794691810172],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 226, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166454851657077, 48.774819691788345],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 227, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166585597027296, 48.774844691617993],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 228, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166716342527005, 48.774869691299031],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 229, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166847088156201, 48.774894690831509],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 230, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.166977833914888, 48.774919690215405],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 231, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.167108579803061, 48.774944689450756],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 232, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.167239325820718, 48.774969688537524],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 233, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.167370071967863, 48.774994687475711],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 234, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.167500818244491, 48.775019686265324],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 235, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.167631564650604, 48.775044684906383],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 236, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.1677623111862, 48.775069683398847],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 237, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.167893057851277, 48.77509468174275],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 238, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168023804645838, 48.775119679938086],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 239, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168154551569875, 48.775144677984827],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 240, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168285298623395, 48.775169675883006],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 241, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168416045806394, 48.775194673632605],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 242, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168546793118873, 48.775219671233636],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 243, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168677540560825, 48.775244668686078],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 244, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168808288132258, 48.77526966598996],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 245, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.168939035833164, 48.775294663145253],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 246, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169069783663545, 48.775319660151972],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 247, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.1692005316234, 48.775344657010116],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 248, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169331279712731, 48.775369653719686],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 249, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169462027931532, 48.775394650280667],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 250, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169588628638893, 48.775427378465459],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 251, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169713998665712, 48.775462400984765],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 252, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169839368866652, 48.775497423367284],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 253, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.169964739241717, 48.775532445613024],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 254, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170090109790905, 48.775567467721977],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 255, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170215480514214, 48.775602489694151],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 256, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170340851411645, 48.775637511529517],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 257, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170466222483197, 48.775672533228139],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 258, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.17059159372887, 48.775707554789953],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 259, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170716965148664, 48.775742576214974],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 260, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170842336742577, 48.775777597503215],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 261, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.170967708510609, 48.775812618654662],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 262, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171093080452762, 48.775847639669323],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 263, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171218452569033, 48.775882660547204],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 264, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171343824859422, 48.775917681288284],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 265, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171469197323928, 48.775952701892578],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 266, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171594569962551, 48.775987722360092],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 267, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171719942775294, 48.776022742690799],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 268, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.17184531576215, 48.776057762884726],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 269, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.171970688923123, 48.776092782941845],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 270, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172096062258213, 48.776127802862185],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 271, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172221435767414, 48.776162822645738],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 272, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172346809450735, 48.77619784229249],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 273, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172472183308168, 48.776232861802448],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 274, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172597557339714, 48.77626788117562],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 275, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172722931545373, 48.776302900411999],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 276, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172848305925147, 48.776337919511569],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 277, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.172973680479032, 48.776372938474346],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 278, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173099055207029, 48.776407957300336],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 279, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173224430109139, 48.776442975989518],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 280, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173349805185357, 48.776477994541906],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 281, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173475180435689, 48.776513012957501],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 282, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.17359837865788, 48.776551003592843],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 283, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173717704282149, 48.776594281308185],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 284, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173837030111331, 48.776637558899424],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 285, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.173956356145426, 48.776680836366552],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 286, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174075682384435, 48.776724113709598],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 287, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174195008828359, 48.776767390928541],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 288, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174314335477193, 48.776810668023359],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 289, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174433662330943, 48.776853944994073],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 290, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174552989389603, 48.776897221840684],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 291, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174672316653178, 48.776940498563178],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 292, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174791644121667, 48.776983775161582],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 293, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.174910971795066, 48.777027051635869],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 294, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175030299673381, 48.777070327986053],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 295, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175149627756607, 48.777113604212133],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 296, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175268956044743, 48.777156880314088],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 297, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175388284537796, 48.777200156291954],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 298, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175507613235759, 48.777243432145688],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 299, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175626942138633, 48.777286707875312],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 300, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175746271246421, 48.777329983480833],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 301, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175865600559122, 48.777373258962236],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 302, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.175984930076734, 48.777416534319535],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 303, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.176104259799256, 48.777459809552717],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 304, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.176223589726693, 48.777503084661781],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 305, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.17634291985904, 48.777546359646742],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 306, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.1764622501963, 48.777589634507571],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 307, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.176581580738469, 48.777632909244296],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 308, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.176700911485554, 48.77767618385689],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 309, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.176820242437547, 48.777719458345373],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 310, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.176939573594453, 48.777762732709753],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 311, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177058904956271, 48.777806006949987],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 312, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177178236523, 48.777849281066132],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 313, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177297568294637, 48.777892555058152],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 314, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177416900271188, 48.77793582892604],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 315, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177536232452649, 48.777979102669811],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 316, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177655564839023, 48.778022376289471],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 317, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177774897430306, 48.778065649784992],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 318, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.177894230226499, 48.778108923156402],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 319, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178013563227605, 48.778152196403695],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 320, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178132896433619, 48.778195469526857],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 321, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178252229844546, 48.7782387425259],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 322, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178371563460381, 48.778282015400819],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 323, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178490897281129, 48.778325288151613],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 324, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178610231306786, 48.778368560778283],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 325, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178729565537354, 48.778411833280806],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 326, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178848899972831, 48.778455105659219],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 327, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.178968234613219, 48.778498377913508],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 328, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.179098529929949, 48.778523958073563],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 329, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.179229516563089, 48.778548422397613],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 330, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.179360503323162, 48.778572886572512],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 331, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.179491490210159, 48.778597350598297],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 332, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.17962247722409, 48.778621814474974],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 333, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.179753464364946, 48.778646278202515],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 334, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.179884451632731, 48.77867074178095],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 335, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180015439027439, 48.778695205210248],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 336, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180146426549076, 48.778719668490446],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 337, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180277414197635, 48.778744131621515],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 338, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18040840197312, 48.778768594603456],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 339, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180539389875525, 48.778793057436275],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 340, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180670377904855, 48.778817520119972],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 341, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180801366061104, 48.778841982654562],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 342, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.180932354344275, 48.778866445040002],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 343, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181063342754365, 48.778890907276342],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 344, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181194331291374, 48.778915369363553],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 345, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181325319955301, 48.778939831301628],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 346, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181456308746148, 48.778964293090581],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 347, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181587297663908, 48.778988754730406],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 348, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181718286708584, 48.779013216221109],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 349, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.181849275880175, 48.779037677562698],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 350, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18198026517868, 48.779062138755158],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 351, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.182111254604099, 48.779086599798482],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 352, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.182242244156429, 48.779111060692664],
-      },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 353, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.182373233835669, 48.779135521437738],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 0.0,
+        angle: 153.34443423852434,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 354, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.182504223641825, 48.77915998203369],
+        coordinates: [9.145250475838646, 48.784622151909332],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 355, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.182635213574887, 48.779184442480499],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 10.0,
+        angle: 153.34443423852434,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 356, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.182766203634857, 48.779208902778187],
+        coordinates: [9.145311316501564, 48.784541676584112],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 357, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.182897193821738, 48.779233362926746],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 20.0,
+        angle: 153.34443423852434,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 358, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.183028184135525, 48.779257822926169],
+        coordinates: [9.145372156970147, 48.784461201225838],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 359, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18315917457622, 48.779282282776471],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 30.0,
+        angle: 153.34443423852434,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 360, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.18329016514382, 48.77930674247763],
+        coordinates: [9.145432997244393, 48.784380725834509],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 361, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.183421155838325, 48.779331202029667],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 40.0,
+        angle: 151.87272390672709,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 362, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.183552146659732, 48.779355661432582],
+        coordinates: [9.145496590548138, 48.784301188745104],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 363, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.183683137608046, 48.779380120686362],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 50.0,
+        angle: 151.87272390672709,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 364, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.183814128683261, 48.779404579790992],
+        coordinates: [9.145560538091805, 48.784221772417702],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 365, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.183945119885378, 48.779429038746507],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 60.0,
+        angle: 143.87328422611935,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 366, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.184076111214393, 48.779453497552886],
+        coordinates: [9.145627371078007, 48.784143548429661],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 367, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.184207102670312, 48.77947795621013],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 70.0,
+        angle: 143.87328422611935,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 368, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.184338094253128, 48.779502414718245],
+        coordinates: [9.145707420273418, 48.784070785547996],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 369, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.184469085962844, 48.779526873077216],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 80.0,
+        angle: 135.27414039495477,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 370, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.184600077799455, 48.779551331287074],
+        coordinates: [9.14579234676475, 48.784000757693562],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 371, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.184731069762964, 48.779575789347767],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 90.0,
+        angle: 135.27414039495477,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 372, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.184862061853373, 48.779600247259353],
+        coordinates: [9.145887959171301, 48.783936722050605],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 373, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.184993054070672, 48.779624705021781],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 100.0,
+        angle: 137.24574256614528,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 374, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.185124046414867, 48.779649162635089],
+        coordinates: [9.14598081127153, 48.783870958361604],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 375, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.185255038885956, 48.779673620099267],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 110.0,
+        angle: 144.5829447276989,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 376, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.185386031483938, 48.779698077414295],
+        coordinates: [9.146070209505663, 48.783803277209486],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 377, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18551702420881, 48.779722534580181],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 120.0,
+        angle: 125.25635871100376,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 378, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.185648017060574, 48.779746991596937],
+        coordinates: [9.146168320918969, 48.783742693289099],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 379, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18577901003923, 48.779771448464572],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 130.0,
+        angle: 64.358994175431889,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 380, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.185910003144773, 48.779795905183043],
+        coordinates: [9.146298257140112, 48.78373221173328],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 381, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.186040996377207, 48.779820361752392],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 140.0,
+        angle: 41.065217945130804,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 382, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.186171989736525, 48.779844818172585],
+        coordinates: [9.146414869855608, 48.783776408275195],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 383, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.186302983222733, 48.779869274443648],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 150.0,
+        angle: 41.065217945130804,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 384, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.186433976835827, 48.779893730565597],
+        coordinates: [9.146504493889561, 48.783844120535818],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 385, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.186564970575805, 48.779918186538374],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 160.0,
+        angle: 43.430645193059476,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 386, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.18669596444267, 48.779942642362023],
+        coordinates: [9.146597082475742, 48.783910046621372],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 387, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.186826958436418, 48.779967098036529],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 170.0,
+        angle: 46.029154806222977,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 388, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.186957952557048, 48.779991553561892],
+        coordinates: [9.146693388726735, 48.783973594620086],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 389, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.187088946804559, 48.780016008938119],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 180.0,
+        angle: 65.27268561063795,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 390, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.187219941178952, 48.780040464165204],
+        coordinates: [9.146798675541531, 48.784029002966875],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 391, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.187350935680227, 48.780064919243152],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 190.0,
+        angle: 89.274775703835545,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 392, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.187481930308381, 48.780089374171951],
+        coordinates: [9.146926862766195, 48.784053401155674],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 393, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.187612925063414, 48.780113828951599],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 200.0,
+        angle: 121.70142967052138,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 394, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.187743919945323, 48.780138283582112],
+        coordinates: [9.147052990023537, 48.784030704182335],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 395, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18787491495411, 48.780162738063474],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 210.0,
+        angle: 136.50743575951978,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 396, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.188005910089775, 48.780187192395687],
+        coordinates: [9.147169699048577, 48.783984505999499],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 397, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.188136905352316, 48.780211646578785],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 220.0,
+        angle: 136.50743575951978,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 398, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.188267900741728, 48.780236100612719],
+        coordinates: [9.147263201820312, 48.783919124155304],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 399, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.188398896258017, 48.780260554497502],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 230.0,
+        angle: 153.69303617445658,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 400, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.188529891901178, 48.780285008233164],
+        coordinates: [9.147328947665171, 48.783840999166323],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 401, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.18866088767121, 48.780309461819648],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 240.0,
+        angle: 153.69303617445658,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 402, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.188791883568117, 48.780333915257003],
+        coordinates: [9.147389041994927, 48.783760279626215],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 403, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.188922879591891, 48.780358368545208],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 250.0,
+        angle: 157.12633480954923,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 404, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.189053875742538, 48.78038282168427],
+        coordinates: [9.147444336819015, 48.78367811607739],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 405, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.189184872020052, 48.780407274674182],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 260.0,
+        angle: 157.12633480954923,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 406, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.189315868424435, 48.780431727514944],
+        coordinates: [9.147497007875996, 48.783595163138671],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 407, height: 50 },
-      geometry: {
-        type: "Point",
-        coordinates: [9.189446864955684, 48.780456180206571],
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 270.0,
+        angle: 157.12633480954923,
       },
-    },
-    {
-      type: "Feature",
-      properties: { fid: 408, height: 50 },
       geometry: {
         type: "Point",
-        coordinates: [9.189577861613801, 48.780480632749033],
+        coordinates: [9.147549678759621, 48.783512210174855],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 409, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 280.0,
+        angle: 150.05431655882489,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.189708858398784, 48.780505085142345],
+        coordinates: [9.147611233004323, 48.783432158419394],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 410, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 290.0,
+        angle: 150.05431655882489,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.18983985531063, 48.780529537386521],
+        coordinates: [9.147678957359432, 48.783354121761057],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 411, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 300.0,
+        angle: 142.78847909696188,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.189970852349344, 48.78055398948154],
+        coordinates: [9.147750339787507, 48.783277683215836],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 412, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 310.0,
+        angle: 142.78847909696188,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190101849514917, 48.780578441427402],
+        coordinates: [9.147832454810665, 48.783205933347382],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 413, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 320.0,
+        angle: 142.78847909696188,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190232846807355, 48.780602893224135],
+        coordinates: [9.147914569599822, 48.783134183419747],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 414, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 330.0,
+        angle: 142.78847909696188,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190363844226653, 48.780627344871704],
+        coordinates: [9.147996684154977, 48.783062433432953],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 415, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 340.0,
+        angle: 142.78847909696188,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190494841772814, 48.780651796370115],
+        coordinates: [9.148078798476135, 48.782990683386991],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 416, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 350.0,
+        angle: 135.17849094773808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19062392061306, 48.780679389343526],
+        coordinates: [9.14816211891131, 48.782919623965988],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 417, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 360.0,
+        angle: 135.17849094773808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190743896096167, 48.780721887005413],
+        coordinates: [9.148257887884489, 48.782855691914136],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 418, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 370.0,
+        angle: 135.17849094773808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190863871781586, 48.780764384541833],
+        coordinates: [9.148353656614395, 48.782791759782235],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 419, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 380.0,
+        angle: 135.17849094773808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.190983847669321, 48.780806881952792],
+        coordinates: [9.148449425101031, 48.782727827570312],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 420, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 390.0,
+        angle: 135.17849094773808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.191103823759365, 48.780849379238298],
+        coordinates: [9.148545193344399, 48.782663895278326],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 421, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 400.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19122380005172, 48.780891876398343],
+        coordinates: [9.148641366127949, 48.782600239975004],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 422, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 410.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19134377654639, 48.780934373432942],
+        coordinates: [9.148741414201107, 48.782539237336259],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 423, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 420.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.191463753243369, 48.780976870342066],
+        coordinates: [9.148841462031738, 48.782478234610267],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 424, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 430.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.191583730142662, 48.781019367125722],
+        coordinates: [9.148941509619844, 48.782417231797019],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 425, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 440.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.191703707244265, 48.781061863783933],
+        coordinates: [9.149041556965424, 48.782356228896525],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 426, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 450.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.191823684548183, 48.781104360316675],
+        coordinates: [9.149141604068481, 48.782295225908776],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 427, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 460.0,
+        angle: 132.58448853524095,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.191943662054408, 48.781146856723943],
+        coordinates: [9.149241650929014, 48.782234222833779],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 428, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 470.0,
+        angle: 135.39243070969323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192063639762948, 48.781189353005757],
+        coordinates: [9.149337892876842, 48.782170625163879],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 429, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 480.0,
+        angle: 135.39243070969323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192183617673797, 48.781231849162104],
+        coordinates: [9.149433297029757, 48.782106456264593],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 430, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 490.0,
+        angle: 135.39243070969323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192303595786958, 48.781274345192998],
+        coordinates: [9.149528700939438, 48.782042287285876],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 431, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 500.0,
+        angle: 135.39243070969323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192423574102431, 48.781316841098423],
+        coordinates: [9.149624104605886, 48.781978118227713],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 432, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 510.0,
+        angle: 135.78482460174618,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192543552620213, 48.781359336878374],
+        coordinates: [9.149719323292832, 48.781913829958611],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 433, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 520.0,
+        angle: 135.78482460174618,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192663531340306, 48.78140183253285],
+        coordinates: [9.149814059243495, 48.781849230463806],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 434, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 530.0,
+        angle: 150.10109816226833,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192783510262709, 48.781444328061873],
+        coordinates: [9.149908649719311, 48.781784558712758],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 435, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 540.0,
+        angle: 150.10109816226833,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.192903489387424, 48.781486823465428],
+        coordinates: [9.149976271859828, 48.781706484173988],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 436, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 550.0,
+        angle: 150.10109816226833,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193023468714451, 48.781529318743516],
+        coordinates: [9.150043893790768, 48.78162840959471],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 437, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 560.0,
+        angle: 184.18491612509152,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193143448243784, 48.781571813896136],
+        coordinates: [9.150035631752887, 48.781538992940938],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 438, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 570.0,
+        angle: 208.35496178598365,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193263427975431, 48.781614308923281],
+        coordinates: [9.150016341966179, 48.781451052237976],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 439, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 580.0,
+        angle: 208.35496178598365,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193383407909385, 48.781656803824959],
+        coordinates: [9.14995145626154, 48.781371970199956],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 440, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 590.0,
+        angle: 230.90614111305715,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19350338804565, 48.781699298601154],
+        coordinates: [9.149862372709126, 48.78130618503009],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 441, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 600.0,
+        angle: 230.90614111305715,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193623368384227, 48.781741793251896],
+        coordinates: [9.149756556255987, 48.781249594683331],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 442, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 610.0,
+        angle: 230.90614111305715,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193743348925111, 48.781784287777164],
+        coordinates: [9.149650740040689, 48.781193004238624],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 443, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 620.0,
+        angle: 230.23747606649255,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.193863329668305, 48.781826782176957],
+        coordinates: [9.149545799595439, 48.781135707169199],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 444, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 630.0,
+        angle: 230.23747606649255,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19398331061381, 48.781869276451268],
+        coordinates: [9.149440990389165, 48.781078304290602],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 445, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 640.0,
+        angle: 230.23747606649255,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194103291761625, 48.781911770600118],
+        coordinates: [9.149336181421855, 48.78102090131587],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 446, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 650.0,
+        angle: 234.46232220835336,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194223273111746, 48.781954264623494],
+        coordinates: [9.149230635616755, 48.780964132191841],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 447, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 660.0,
+        angle: 234.46232220835336,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194343254664178, 48.781996758521394],
+        coordinates: [9.149119712874775, 48.780911987775582],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 448, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 670.0,
+        angle: 234.46232220835336,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194463236418919, 48.782039252293806],
+        coordinates: [9.149008790362476, 48.780859843251861],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 449, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 680.0,
+        angle: 234.46232220835336,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194583218375968, 48.782081745940751],
+        coordinates: [9.148897868079857, 48.780807698620684],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 450, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 690.0,
+        angle: 234.75796344178144,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194703200535328, 48.782124239462235],
+        coordinates: [9.148786809968545, 48.780755680980072],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 451, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 700.0,
+        angle: 234.75796344178144,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.194823182896995, 48.782166732858236],
+        coordinates: [9.148675482489507, 48.780703915073545],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 452, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 710.0,
+        angle: 234.75796344178144,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19494316546097, 48.782209226128757],
+        coordinates: [9.148564155239312, 48.780652149058774],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 453, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 720.0,
+        angle: 220.30131948183879,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195063148227252, 48.782251719273795],
+        coordinates: [9.148472610482102, 48.780586044816133],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 454, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 730.0,
+        angle: 220.30131948183879,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195183131195845, 48.782294212293351],
+        coordinates: [9.148384363545649, 48.780517550425969],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 455, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 740.0,
+        angle: 210.77040817996041,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195303114366748, 48.782336705187447],
+        coordinates: [9.148306742997285, 48.780444019519585],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 456, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 750.0,
+        angle: 210.77040817996041,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195423097739955, 48.782379197956047],
+        coordinates: [9.148236875683358, 48.780366813888236],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 457, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 760.0,
+        angle: 210.77040817996041,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195543081315472, 48.782421690599172],
+        coordinates: [9.148167008583908, 48.78028960821328],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 458, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 770.0,
+        angle: 195.88716850253493,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195663065093298, 48.782464183116815],
+        coordinates: [9.148104383716106, 48.780210327383024],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 459, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 780.0,
+        angle: 195.88716850253493,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195783049073428, 48.782506675508984],
+        coordinates: [9.148066866947044, 48.780123852154432],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 460, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 790.0,
+        angle: 195.88716850253493,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.195903033255869, 48.78254916777567],
+        coordinates: [9.14802935030718, 48.780037376912212],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 461, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 800.0,
+        angle: 201.44773632713216,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196023017640616, 48.782591659916861],
+        coordinates: [9.147988705885906, 48.779951604526083],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 462, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 810.0,
+        angle: 201.44773632713216,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196143002227672, 48.782634151932584],
+        coordinates: [9.147938687122881, 48.779867938653886],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 463, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 820.0,
+        angle: 201.44773632713216,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196262987017034, 48.782676643822818],
+        coordinates: [9.147888668526383, 48.779784272758604],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 464, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 830.0,
+        angle: 201.44773632713216,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196382972008703, 48.78271913558757],
+        coordinates: [9.147838650096411, 48.779700606840223],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 465, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 840.0,
+        angle: 200.97975320294208,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196502957202679, 48.782761627226833],
+        coordinates: [9.147789606327487, 48.779616689479624],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 466, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 850.0,
+        angle: 200.97975320294208,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196622942598962, 48.782804118740636],
+        coordinates: [9.147740623907429, 48.779532756311035],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 467, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 860.0,
+        angle: 200.97975320294208,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196742928197553, 48.782846610128921],
+        coordinates: [9.147691641650972, 48.779448823120241],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 468, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 870.0,
+        angle: 185.83478899653198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19686291399845, 48.782889101391724],
+        coordinates: [9.147670811679907, 48.779360416842579],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 469, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 880.0,
+        angle: 185.83478899653198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.196982900001654, 48.782931592529053],
+        coordinates: [9.147656711316147, 48.779270941308553],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 470, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 890.0,
+        angle: 185.83478899653198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197102886207162, 48.782974083540886],
+        coordinates: [9.147642611002865, 48.779181465771359],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 471, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 900.0,
+        angle: 169.99202019849506,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197222872614981, 48.783016574427251],
+        coordinates: [9.147657655427349, 48.779092654625401],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 472, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 910.0,
+        angle: 128.08877287961721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197342859225103, 48.783059065188112],
+        coordinates: [9.147702622541173, 48.779012548851895],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 473, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 920.0,
+        angle: 128.08877287961721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19746284603753, 48.783101555823478],
+        coordinates: [9.147809591879447, 48.778956917250909],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 474, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 930.0,
+        angle: 128.82982490644798,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197582833052264, 48.783144046333369],
+        coordinates: [9.14791635289232, 48.778901113094186],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 475, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 940.0,
+        angle: 128.82982490644798,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197702820269306, 48.783186536717764],
+        coordinates: [9.148022224119845, 48.778844571615551],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 476, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 950.0,
+        angle: 128.82982490644798,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197822807688652, 48.783229026976663],
+        coordinates: [9.148128095109483, 48.778788030039337],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 477, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 960.0,
+        angle: 121.86597769275707,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.197942795310302, 48.78327151711008],
+        coordinates: [9.148242346578968, 48.778739265116407],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 478, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 970.0,
+        angle: 121.86597769275707,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198062783134262, 48.783314007118008],
+        coordinates: [9.14835780879126, 48.778691623771969],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 479, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 980.0,
+        angle: 117.12130340509805,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198182771160525, 48.783356497000426],
+        coordinates: [9.148478597151529, 48.77865017762187],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 480, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 990.0,
+        angle: 117.12130340509805,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198302759389094, 48.783398986757369],
+        coordinates: [9.148599625916514, 48.778609011200174],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 481, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1000.0,
+        angle: 117.71850162750594,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198422747819967, 48.783441476388816],
+        coordinates: [9.148720044687197, 48.778567071515603],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 482, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1010.0,
+        angle: 117.71850162750594,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198542736453144, 48.78348396589476],
+        coordinates: [9.148840417250048, 48.778525073374873],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 483, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1020.0,
+        angle: 117.71850162750594,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198662725288628, 48.783526455275215],
+        coordinates: [9.148960789611856, 48.778483075108362],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 484, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1030.0,
+        angle: 96.115503567747766,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.198782714326416, 48.783568944530174],
+        coordinates: [9.14909606144022, 48.778473226970746],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 485, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1040.0,
+        angle: 50.727835322741257,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19890270356651, 48.783611433659637],
+        coordinates: [9.149221980528173, 48.778498056894684],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 486, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1050.0,
+        angle: 50.727835322741257,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199022693008907, 48.783653922663625],
+        coordinates: [9.149327523605841, 48.778554865114835],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 487, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1060.0,
+        angle: 50.727835322741257,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199142682653608, 48.783696411542103],
+        coordinates: [9.149433066921629, 48.778611673237513],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 488, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1070.0,
+        angle: 45.139405514069892,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199262672500616, 48.78373890029507],
+        coordinates: [9.149533024472207, 48.77867258803802],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 489, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1080.0,
+        angle: 45.139405514069892,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199382662549926, 48.783781388922549],
+        coordinates: [9.149629696093067, 48.778735918715306],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 490, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1090.0,
+        angle: 45.139405514069892,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199502652801542, 48.783823877424517],
+        coordinates: [9.149726367957147, 48.778799249310552],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 491, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1100.0,
+        angle: 46.795517945926449,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199622643255459, 48.783866365801011],
+        coordinates: [9.149824220819777, 48.778861769475981],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 492, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1110.0,
+        angle: 46.795517945926449,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199742633911683, 48.783908854052001],
+        coordinates: [9.149923622195095, 48.778923226984503],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 493, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1120.0,
+        angle: 46.795517945926449,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.199862624770208, 48.783951342177481],
+        coordinates: [9.150023023813082, 48.778984684406417],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 494, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1130.0,
+        angle: 46.795517945926449,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.19998261583104, 48.783993830177458],
+        coordinates: [9.150122425673739, 48.779046141741695],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 495, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1140.0,
+        angle: 46.795517945926449,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200102607094173, 48.784036318051939],
+        coordinates: [9.150221827777072, 48.779107598990322],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 496, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1150.0,
+        angle: 53.775055743347266,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200156784835912, 48.784111471927986],
+        coordinates: [9.15032616937723, 48.779165110508742],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 497, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1160.0,
+        angle: 53.775055743347266,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200185096535277, 48.784199464243493],
+        coordinates: [9.150436135164922, 48.779218129322302],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 498, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1170.0,
+        angle: 67.075287800235301,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200213408334076, 48.784287456550551],
+        coordinates: [9.150547995490388, 48.779268931789261],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 499, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1180.0,
+        angle: 67.075287800235301,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200241720232318, 48.784375448849183],
+        coordinates: [9.150673467810524, 48.779303809031859],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 500, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1190.0,
+        angle: 67.075287800235301,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200270032229998, 48.784463441139387],
+        coordinates: [9.150798940304254, 48.779338686137486],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 501, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1200.0,
+        angle: 83.980148730763062,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200298344327118, 48.784551433421136],
+        coordinates: [9.150925409386025, 48.779370990658073],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 502, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1210.0,
+        angle: 83.980148730763062,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20032665652368, 48.784639425694465],
+        coordinates: [9.151060805775925, 48.779380247626122],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 503, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1220.0,
+        angle: 83.980148730763062,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200354968819687, 48.784727417959346],
+        coordinates: [9.151196202215258, 48.779389504435038],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 504, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1230.0,
+        angle: 91.627283323248648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200383281215133, 48.784815410215792],
+        coordinates: [9.151331637318471, 48.779398059252152],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 505, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1240.0,
+        angle: 91.627283323248648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200411593710024, 48.784903402463812],
+        coordinates: [9.151467693497503, 48.779395325891677],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 506, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1250.0,
+        angle: 91.627283323248648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200439906304359, 48.78499139470339],
+        coordinates: [9.15160374966139, 48.779392592370606],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 507, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1260.0,
+        angle: 91.627283323248648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200468218998139, 48.785079386934527],
+        coordinates: [9.151739805810129, 48.779389858688951],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 508, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1270.0,
+        angle: 91.627283323248648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200496531791366, 48.785167379157215],
+        coordinates: [9.15187586194372, 48.7793871248467],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 509, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1280.0,
+        angle: 91.627283323248648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200524844684038, 48.785255371371505],
+        coordinates: [9.15201191806216, 48.779384390843866],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 510, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1290.0,
+        angle: 71.565051175170908,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200553157676158, 48.785343363577326],
+        coordinates: [9.152146278678446, 48.779389347589607],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 511, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1300.0,
+        angle: 71.565051175170908,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200581470767723, 48.785431355774712],
+        coordinates: [9.152275498295849, 48.779417624685742],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 512, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1310.0,
+        angle: 71.565051175170908,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20060978395874, 48.785519347963671],
+        coordinates: [9.152404718058119, 48.779445901636748],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 513, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1320.0,
+        angle: 71.565051175170908,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200638097249204, 48.785607340144196],
+        coordinates: [9.15253393796525, 48.779474178442563],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 514, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1330.0,
+        angle: 71.565051175170908,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200666410639119, 48.78569533231628],
+        coordinates: [9.152663158017248, 48.779502455103227],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 515, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1340.0,
+        angle: 56.309932474242316,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200694724128484, 48.785783324479922],
+        coordinates: [9.152777602714123, 48.779550799261095],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 516, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1350.0,
+        angle: 56.309932474242316,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200723037717301, 48.785871316635131],
+        coordinates: [9.152891012256957, 48.779600549521639],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 517, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1360.0,
+        angle: 56.309932474242316,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20075135140557, 48.785959308781898],
+        coordinates: [9.1530044220238, 48.779650299669946],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 518, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1370.0,
+        angle: 37.199812115488122,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200779665193291, 48.786047300920238],
+        coordinates: [9.15309920628628, 48.779713190092608],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 519, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1380.0,
+        angle: 37.199812115488122,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200807979080464, 48.786135293050123],
+        coordinates: [9.153181721759871, 48.779784736196731],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 520, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1390.0,
+        angle: 37.199812115488122,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200836293067095, 48.786223285171594],
+        coordinates: [9.153264237468109, 48.779856282240623],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 521, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1400.0,
+        angle: 37.199812115488122,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200864607153177, 48.786311277284611],
+        coordinates: [9.153346753410995, 48.779927828224324],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 522, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1410.0,
+        angle: 32.67222928890898,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200892921338719, 48.786399269389186],
+        coordinates: [9.153429112439786, 48.77999944700796],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 523, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1420.0,
+        angle: 32.67222928890898,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200921235623714, 48.786487261485334],
+        coordinates: [9.153502825533371, 48.780075074427707],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 524, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1430.0,
+        angle: 32.67222928890898,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200949550008167, 48.786575253573048],
+        coordinates: [9.153576538848592, 48.780150701799073],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 525, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1440.0,
+        angle: 32.67222928890898,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.200977864492078, 48.786663245652321],
+        coordinates: [9.153650252385452, 48.780226329122094],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 526, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1450.0,
+        angle: 32.67222928890898,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201006179075446, 48.786751237723145],
+        coordinates: [9.153723966143952, 48.780301956396734],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 527, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1460.0,
+        angle: 23.448062578218952,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201034493758275, 48.786839229785549],
+        coordinates: [9.15379365105872, 48.780379009909829],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 528, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1470.0,
+        angle: 23.448062578218952,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201062808540563, 48.786927221839505],
+        coordinates: [9.153848068388069, 48.78046146817308],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 529, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1480.0,
+        angle: 23.448062578218952,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201091123422311, 48.78701521388502],
+        coordinates: [9.153902485895948, 48.780543926409273],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 530, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1490.0,
+        angle: 23.448062578218952,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20111943840352, 48.787103205922101],
+        coordinates: [9.15395690358236, 48.780626384618408],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 531, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1500.0,
+        angle: 356.51067509440577,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201147753484193, 48.787191197950747],
+        coordinates: [9.153997091583063, 48.780710517115558],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 532, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1510.0,
+        angle: 356.51067509440577,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201176068664326, 48.787279189970945],
+        coordinates: [9.15398908150679, 48.780800320691988],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 533, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1520.0,
+        angle: 342.12130340425512,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201204383943924, 48.787367181982717],
+        coordinates: [9.15396697602031, 48.780888386326836],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 534, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1530.0,
+        angle: 342.12130340425512,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201232699322984, 48.787455173986039],
+        coordinates: [9.153925447740738, 48.780974057161522],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 535, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1540.0,
+        angle: 342.12130340425512,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201261014801513, 48.787543165980935],
+        coordinates: [9.153883919320117, 48.78105972798015],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 536, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1550.0,
+        angle: 327.34919770324638,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201289330379506, 48.787631157967382],
+        coordinates: [9.15382483911463, 48.781139953176215],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 537, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1560.0,
+        angle: 327.34919770324638,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201317646056964, 48.787719149945403],
+        coordinates: [9.153751629467305, 48.781215794567338],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 538, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1570.0,
+        angle: 327.34919770324638,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201345961833889, 48.787807141914968],
+        coordinates: [9.15367841959954, 48.781291635911181],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 539, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1580.0,
+        angle: 332.92791976228915,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201374277710283, 48.787895133876098],
+        coordinates: [9.153615132423111, 48.78137122460641],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 540, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1590.0,
+        angle: 332.92791976228915,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201402593686144, 48.787983125828809],
+        coordinates: [9.153553425195403, 48.781451410010945],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 541, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1600.0,
+        angle: 358.67802434035184,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201430909761475, 48.788071117773072],
+        coordinates: [9.153529313031003, 48.781537827564769],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 542, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1610.0,
+        angle: 358.67802434035184,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201459225936276, 48.788159109708879],
+        coordinates: [9.153526446826501, 48.781627767070887],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 543, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1620.0,
+        angle: 358.67802434035184,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201487542210547, 48.788247101636273],
+        coordinates: [9.153523580612134, 48.781717706575527],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 544, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1630.0,
+        angle: 16.348171550616758,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201515858584287, 48.788335093555204],
+        coordinates: [9.153552961702358, 48.781804791780878],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 545, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1640.0,
+        angle: 26.565051177179043,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201544175057503, 48.788423085465709],
+        coordinates: [9.153592859410521, 48.781890718308716],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 546, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1650.0,
+        angle: 26.565051177179043,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20157249163019, 48.788511077367779],
+        coordinates: [9.153653982188201, 48.781971099178115],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 547, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1660.0,
+        angle: 26.565051177179043,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201600808302349, 48.788599069261409],
+        coordinates: [9.153715105161314, 48.782051480013763],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 548, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1670.0,
+        angle: 46.548157698734542,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201629125073982, 48.788687061146568],
+        coordinates: [9.153780274180262, 48.782129869905958],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 549, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1680.0,
+        angle: 46.548157698734542,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201657441945091, 48.788775053023322],
+        coordinates: [9.153879284444399, 48.782191607013218],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 550, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1690.0,
+        angle: 46.548157698734542,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201685758915676, 48.788863044891642],
+        coordinates: [9.153978294951381, 48.78225334403453],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 551, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1700.0,
+        angle: 46.548157698734542,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201714075985736, 48.788951036751513],
+        coordinates: [9.154077305701211, 48.782315080969852],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 552, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1710.0,
+        angle: 48.423871244579786,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201742393155273, 48.789039028602929],
+        coordinates: [9.154178275497925, 48.782375400090928],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 553, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1720.0,
+        angle: 48.423871244579786,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201777983372253, 48.789125855270811],
+        coordinates: [9.154280291474272, 48.782434962100666],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 554, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1730.0,
+        angle: 48.423871244579786,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201813800500629, 48.789212645593217],
+        coordinates: [9.154382307692002, 48.782494524019263],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 555, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1740.0,
+        angle: 70.906507999354176,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201849617752973, 48.789299435903025],
+        coordinates: [9.154484460121251, 48.782553931574881],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 556, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1750.0,
+        angle: 70.906507999354176,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20188543512929, 48.789386226200207],
+        coordinates: [9.15461318888754, 48.782583185707701],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 557, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1760.0,
+        angle: 70.906507999354176,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201921252629578, 48.789473016484784],
+        coordinates: [9.154741917803154, 48.78261243969645],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 558, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1770.0,
+        angle: 70.906507999354176,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201957070253837, 48.789559806756763],
+        coordinates: [9.154870646868098, 48.782641693541102],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 559, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1780.0,
+        angle: 97.125016348741468,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.201992888002069, 48.78964659701613],
+        coordinates: [9.155001731822448, 48.782655798938748],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 560, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1790.0,
+        angle: 97.125016348741468,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202028705874277, 48.789733387262878],
+        coordinates: [9.155136773786582, 48.782644459138318],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 561, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1800.0,
+        angle: 97.125016348741468,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202064523870458, 48.789820177497027],
+        coordinates: [9.155271815689503, 48.782633119179721],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 562, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1810.0,
+        angle: 102.89374404514456,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202100341990613, 48.789906967718551],
+        coordinates: [9.155405568474688, 48.782617009378207],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 563, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1820.0,
+        angle: 102.89374404514456,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202136160234748, 48.789993757927483],
+        coordinates: [9.155538201509888, 48.782596756552124],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 564, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1830.0,
+        angle: 102.89374404514456,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202171978602859, 48.79008054812379],
+        coordinates: [9.155670834438014, 48.782576503573445],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 565, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1840.0,
+        angle: 102.89374404514456,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20220779709495, 48.790167338307505],
+        coordinates: [9.155803467259064, 48.78255625044217],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 566, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1850.0,
+        angle: 97.765166018940363,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202243615711017, 48.790254128478587],
+        coordinates: [9.155937841656611, 48.782542239694294],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 567, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1860.0,
+        angle: 97.765166018940363,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202279434451068, 48.790340918637071],
+        coordinates: [9.156072682940016, 48.78252990245349],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 568, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1870.0,
+        angle: 97.765166018940363,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202315253315096, 48.79042770878295],
+        coordinates: [9.156207524156954, 48.782517565054988],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 569, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1880.0,
+        angle: 97.765166018940363,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202351072303108, 48.790514498916217],
+        coordinates: [9.156342365307422, 48.78250522749876],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 570, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1890.0,
+        angle: 86.24827092856539,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202386891415102, 48.79060128903685],
+        coordinates: [9.15647809811901, 48.782508775831381],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 571, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1900.0,
+        angle: 86.24827092856539,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20242271065108, 48.790688079144907],
+        coordinates: [9.156613951846129, 48.782514477664847],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 572, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1910.0,
+        angle: 78.023867554734323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202458530011041, 48.790774869240337],
+        coordinates: [9.156749303628803, 48.782522618101069],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 573, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1920.0,
+        angle: 78.023867554734323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202494349494989, 48.790861659323156],
+        coordinates: [9.156882526056494, 48.782541103846405],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 574, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1930.0,
+        angle: 78.023867554734323,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202530169102921, 48.790948449393362],
+        coordinates: [9.157015748581681, 48.782559589437597],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 575, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1940.0,
+        angle: 63.799885159322969,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202565988834841, 48.791035239450956],
+        coordinates: [9.157146538088972, 48.782582752577078],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 576, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1950.0,
+        angle: 63.799885159322969,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20260180869075, 48.791122029495945],
+        coordinates: [9.157268803452739, 48.782622303674692],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 577, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1960.0,
+        angle: 63.799885159322969,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202637628670647, 48.791208819528329],
+        coordinates: [9.157391069008407, 48.782661854642129],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 578, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1970.0,
+        angle: 65.942650550215987,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202673448774533, 48.791295609548094],
+        coordinates: [9.157513620005938, 48.782701001415859],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 579, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1980.0,
+        angle: 65.942650550215987,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202709269002408, 48.791382399555232],
+        coordinates: [9.157638038169225, 48.782737503433424],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 580, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 1990.0,
+        angle: 65.942650550215987,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202745089354277, 48.791469189549773],
+        coordinates: [9.1577624565127, 48.78277400531627],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 581, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2000.0,
+        angle: 63.434948822164067,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202780909830137, 48.791555979531701],
+        coordinates: [9.157885774307456, 48.78281205341753],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 582, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2010.0,
+        angle: 63.434948822164067,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202816730429991, 48.791642769501017],
+        coordinates: [9.158007657136489, 48.782852117558718],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 583, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2020.0,
+        angle: 20.409882833922808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202852551153837, 48.791729559457728],
+        coordinates: [9.158094969155794, 48.782912782049848],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 584, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2030.0,
+        angle: 20.409882833922808,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202888372001679, 48.791816349401827],
+        coordinates: [9.158142706544274, 48.782997028677279],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 585, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2040.0,
+        angle: 17.495757877372149,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202924192973516, 48.791903139333293],
+        coordinates: [9.158187516405794, 48.783081944178669],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 586, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2050.0,
+        angle: 17.495757877372149,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202960014069351, 48.791989929252168],
+        coordinates: [9.158228711181366, 48.783167685642582],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 587, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2060.0,
+        angle: 17.495757877372149,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.202995835289181, 48.79207671915843],
+        coordinates: [9.158269906097598, 48.783253427090344],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 588, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2070.0,
+        angle: 17.495757877372149,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203031656633009, 48.792163509052081],
+        coordinates: [9.158311101154492, 48.783339168521955],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 589, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2080.0,
+        angle: 38.829824902461247,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203067478100838, 48.792250298933105],
+        coordinates: [9.158361304260357, 48.783421707139901],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 590, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2090.0,
+        angle: 38.829824902461247,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203103299692666, 48.792337088801524],
+        coordinates: [9.158446879398378, 48.783491669117112],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 591, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2100.0,
+        angle: 38.829824902461247,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203139121408496, 48.792423878657331],
+        coordinates: [9.15853245477437, 48.783561631029677],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 592, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2110.0,
+        angle: 37.512611802125519,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203174943248326, 48.792510668500519],
+        coordinates: [9.158615851297192, 48.783632729745818],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 593, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2120.0,
+        angle: 37.512611802125519,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203210765212159, 48.792597458331109],
+        coordinates: [9.158698970844881, 48.783703973026078],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 594, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2130.0,
+        angle: 37.635253755325081,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203246587299995, 48.792684248149072],
+        coordinates: [9.158782123203657, 48.783775199611313],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 595, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2140.0,
+        angle: 37.635253755325081,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203282409511838, 48.792771037954424],
+        coordinates: [9.158865473796588, 48.783846325032073],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 596, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2150.0,
+        angle: 37.635253755325081,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203318231847684, 48.792857827747163],
+        coordinates: [9.158948824625179, 48.783917450391428],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 597, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2160.0,
+        angle: 50.542992087254355,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203362706898153, 48.792942070650113],
+        coordinates: [9.159050501441087, 48.783976795466991],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 598, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2170.0,
+        angle: 50.542992087254355,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203436408101856, 48.793017710897892],
+        coordinates: [9.159155789252187, 48.784033819369334],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 599, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2180.0,
+        angle: 50.542992087254355,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203510109527352, 48.793093351097255],
+        coordinates: [9.159261077301778, 48.784090843174695],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 600, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2190.0,
+        angle: 50.267697128624874,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20358381117464, 48.793168991248187],
+        coordinates: [9.159366311073505, 48.784147910625059],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 601, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2200.0,
+        angle: 50.267697128624874,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203657513043723, 48.79324463135071],
+        coordinates: [9.159471183772613, 48.784205267882399],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 602, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2210.0,
+        angle: 50.267697128624874,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203731215134599, 48.793320271404788],
+        coordinates: [9.159576056710661, 48.784262625043503],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 603, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2220.0,
+        angle: 55.713123021941158,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203804917447274, 48.793395911410457],
+        coordinates: [9.159688136586034, 48.784313636819981],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 604, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2230.0,
+        angle: 55.713123021941158,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203878619981744, 48.793471551367695],
+        coordinates: [9.159800773460697, 48.784364158263926],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 605, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2240.0,
+        angle: 62.93889386319146,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.203952322738015, 48.79354719127651],
+        coordinates: [9.159918512906385, 48.784408967762985],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 606, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2250.0,
+        angle: 62.93889386319146,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204026025716084, 48.793622831136894],
+        coordinates: [9.160039871783047, 48.784449725582149],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 607, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2260.0,
+        angle: 81.979310203838992,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204099728915955, 48.793698470948861],
+        coordinates: [9.160165438813422, 48.784481621095338],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 608, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2270.0,
+        angle: 92.822155298800865,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204173432337628, 48.793774110712391],
+        coordinates: [9.16030037983186, 48.784492455036826],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 609, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2280.0,
+        angle: 92.822155298800865,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204247135981104, 48.793849750427512],
+        coordinates: [9.160436333088313, 48.78448783662941],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 610, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2290.0,
+        angle: 101.84207611812685,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204320839846382, 48.793925390094195],
+        coordinates: [9.160570825116192, 48.784475836767946],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 611, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2300.0,
+        angle: 108.43494882044148,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20439454393347, 48.794001029712462],
+        coordinates: [9.160703455422391, 48.784455867857211],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 612, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2310.0,
+        angle: 108.43494882044148,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204468248242364, 48.794076669282283],
+        coordinates: [9.160832511035052, 48.784427240127854],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 613, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2320.0,
+        angle: 110.49259477014034,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204541952773065, 48.794152308803689],
+        coordinates: [9.16096058020204, 48.78439678034453],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 614, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2330.0,
+        angle: 110.49259477014034,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204615657525576, 48.794227948276649],
+        coordinates: [9.161087996830846, 48.784365108716017],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 615, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2340.0,
+        angle: 108.06317176760864,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204689362499897, 48.794303587701201],
+        coordinates: [9.161215943696542, 48.784334432289072],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 616, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2350.0,
+        angle: 108.06317176760864,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204763067696028, 48.794379227077314],
+        coordinates: [9.161345277093027, 48.784306357960304],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 617, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2360.0,
+        angle: 108.06317176760864,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204836773113975, 48.79445486640499],
+        coordinates: [9.161474610344916, 48.784278283486429],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 618, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2370.0,
+        angle: 108.06317176760864,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.204943196427649, 48.794509852453324],
+        coordinates: [9.161603943452207, 48.784250208867448],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 619, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2380.0,
+        angle: 108.06317176760864,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20505420685395, 48.794561942899513],
+        coordinates: [9.161733276414903, 48.784222134103366],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 620, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2390.0,
+        angle: 109.77802889098606,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20516521750994, 48.794614033237991],
+        coordinates: [9.161862008757632, 48.784192909538731],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 621, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2400.0,
+        angle: 109.77802889098606,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.205276228395618, 48.794666123468787],
+        coordinates: [9.1619900121244, 48.784162289444339],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 622, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2410.0,
+        angle: 109.77802889098606,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.205387239510992, 48.794718213591864],
+        coordinates: [9.162118015335121, 48.784131669207802],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 623, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2420.0,
+        angle: 109.93799174378064,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.205498250856056, 48.794770303607251],
+        coordinates: [9.162246013421099, 48.784101039798152],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 624, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2430.0,
+        angle: 109.93799174378064,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20560926243081, 48.794822393514934],
+        coordinates: [9.162373886454271, 48.784070183238505],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 625, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2440.0,
+        angle: 109.93799174378064,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.205720274235256, 48.794874483314921],
+        coordinates: [9.162501759330354, 48.784039326536998],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 626, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2450.0,
+        angle: 109.93799174378064,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.205831286269397, 48.794926573007203],
+        coordinates: [9.162629632049347, 48.784008469693632],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 627, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2460.0,
+        angle: 109.73268949938807,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20594229853323, 48.794978662591788],
+        coordinates: [9.162757580787478, 48.783977751332486],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 628, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2470.0,
+        angle: 109.73268949938807,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206053311026755, 48.795030752068662],
+        coordinates: [9.162885619687936, 48.783947197189015],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 629, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2480.0,
+        angle: 109.72227776483385,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206164323749976, 48.795082841437832],
+        coordinates: [9.163013661013023, 48.783916647626718],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 630, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2490.0,
+        angle: 109.72227776483385,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206275336702889, 48.795134930699284],
+        coordinates: [9.163141708001943, 48.783886108574833],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 631, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2500.0,
+        angle: 109.72227776483385,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206386349885495, 48.795187019853046],
+        coordinates: [9.163269754835174, 48.783855569380684],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 632, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2510.0,
+        angle: 109.72227776483385,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206499474334723, 48.795236509733904],
+        coordinates: [9.163397801512714, 48.783825030044319],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 633, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2520.0,
+        angle: 109.72227776483385,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206626546381608, 48.79526882706903],
+        coordinates: [9.163525848034565, 48.783794490565704],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 634, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2530.0,
+        angle: 109.72227776483385,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.206753618591357, 48.795301144263668],
+        coordinates: [9.163653894400724, 48.783763950944845],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 635, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2540.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20688069096397, 48.79533346131781],
+        coordinates: [9.163782631420011, 48.783734718878229],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 636, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2550.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207007763499449, 48.795365778231456],
+        coordinates: [9.163911619874753, 48.78370596291483],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 637, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2560.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20713483619779, 48.795398095004614],
+        coordinates: [9.164040608181793, 48.783677206807084],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 638, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2570.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207261909058992, 48.795430411637277],
+        coordinates: [9.164169596341129, 48.783648450555027],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 639, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2580.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207388982083057, 48.795462728129436],
+        coordinates: [9.164298584352759, 48.783619694158617],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 640, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2590.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207516055269984, 48.795495044481108],
+        coordinates: [9.164427572216685, 48.78359093761788],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 641, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2600.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207643128619772, 48.795527360692262],
+        coordinates: [9.164556559932903, 48.78356218093279],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 642, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2610.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207770202132419, 48.795559676762942],
+        coordinates: [9.164685547501415, 48.783533424103403],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 643, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2620.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.207897275807927, 48.795591992693105],
+        coordinates: [9.16481453492222, 48.783504667129655],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 644, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2630.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208024349646294, 48.795624308482786],
+        coordinates: [9.164943522195317, 48.783475910011596],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 645, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2640.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.20815142364752, 48.795656624131958],
+        coordinates: [9.165072509320705, 48.783447152749204],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 646, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2650.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208278497811603, 48.795688939640641],
+        coordinates: [9.165201496298382, 48.783418395342487],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 647, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2660.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208405572138545, 48.795721255008814],
+        coordinates: [9.165330483128349, 48.783389637791423],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 648, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2670.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208532646628345, 48.795753570236492],
+        coordinates: [9.165459469810607, 48.783360880096041],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 649, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2680.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208659721281, 48.795785885323674],
+        coordinates: [9.165588456345152, 48.783332122256333],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 650, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2690.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208786796096513, 48.795818200270354],
+        coordinates: [9.165717442731985, 48.783303364272292],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 651, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2700.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.208913871074879, 48.795850515076523],
+        coordinates: [9.165846428971104, 48.78327460614392],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 652, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2710.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209040946216101, 48.795882829742183],
+        coordinates: [9.165975415062512, 48.783245847871221],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 653, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2720.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209168021520178, 48.795915144267362],
+        coordinates: [9.166104401006203, 48.783217089454212],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 654, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2730.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209295096987107, 48.795947458652023],
+        coordinates: [9.166233386802181, 48.783188330892855],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 655, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2740.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209422172616891, 48.795979772896196],
+        coordinates: [9.166362372450443, 48.783159572187174],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 656, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2750.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209549248409527, 48.796012086999852],
+        coordinates: [9.166491357950989, 48.783130813337173],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 657, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2760.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209680627713427, 48.796031695290431],
+        coordinates: [9.166620343303817, 48.783102054342855],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 658, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2770.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209816430311568, 48.796038243810919],
+        coordinates: [9.16674932850893, 48.783073295204204],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 659, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2780.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.209952232944554, 48.796044792171358],
+        coordinates: [9.166878313566322, 48.783044535921228],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 660, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2790.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210088035612378, 48.796051340371726],
+        coordinates: [9.167007298475996, 48.783015776493926],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 661, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2800.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210223838315041, 48.796057888412058],
+        coordinates: [9.16713628323795, 48.78298701692232],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 662, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2810.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210359641052541, 48.796064436292326],
+        coordinates: [9.167265267852184, 48.78295825720636],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 663, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2820.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210495443824877, 48.79607098401253],
+        coordinates: [9.167394252318697, 48.782929497346089],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 664, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2830.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210631246632049, 48.796077531572699],
+        coordinates: [9.167523236637487, 48.782900737341492],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 665, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2840.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210767049474054, 48.796084078972811],
+        coordinates: [9.167652220808558, 48.782871977192592],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 666, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2850.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.210902852350891, 48.796090626212859],
+        coordinates: [9.167781204831904, 48.782843216899359],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 667, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2860.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.211038655262561, 48.796097173292864],
+        coordinates: [9.167910188707527, 48.7828144564618],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 668, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2870.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21117445820906, 48.796103720212805],
+        coordinates: [9.168039172435424, 48.78278569587993],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 669, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2880.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.211310261190389, 48.796110266972704],
+        coordinates: [9.168168156015597, 48.782756935153728],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 670, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2890.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.211446064206546, 48.796116813572532],
+        coordinates: [9.168297139448043, 48.782728174283214],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 671, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2900.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.211581867257529, 48.796123360012309],
+        coordinates: [9.168426122732766, 48.782699413268389],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 672, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2910.0,
+        angle: 108.51880647147721,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21171767034334, 48.796129906292038],
+        coordinates: [9.168555105869759, 48.782670652109239],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 673, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2920.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.211853473463973, 48.796136452411702],
+        coordinates: [9.168683149999843, 48.782640137392242],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 674, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2930.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.211989276619429, 48.796142998371323],
+        coordinates: [9.168810800612341, 48.782608887893502],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 675, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2940.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.212125079809708, 48.796149544170888],
+        coordinates: [9.168938451066026, 48.782577638253379],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 676, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2950.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21226088303481, 48.796156089810395],
+        coordinates: [9.169066101360899, 48.782546388471914],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 677, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2960.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.212396686294728, 48.796162635289832],
+        coordinates: [9.169193751496962, 48.782515138549073],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 678, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2970.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.212532489589467, 48.79616918060924],
+        coordinates: [9.169321401474212, 48.782483888484876],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 679, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2980.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.212668292919021, 48.79617572576857],
+        coordinates: [9.16944905129265, 48.782452638279302],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 680, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 2990.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.212803720011294, 48.796169072452699],
+        coordinates: [9.169576700952275, 48.782421387932381],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 681, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3000.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.212939053963121, 48.796159153516477],
+        coordinates: [9.169704350453085, 48.782390137444082],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 682, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3010.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213074387861074, 48.796149234421414],
+        coordinates: [9.169831999795079, 48.782358886814428],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 683, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3020.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213209721705153, 48.796139315167522],
+        coordinates: [9.16995964897826, 48.782327636043419],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 684, height: 50 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3030.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213345055495358, 48.796129395754797],
+        coordinates: [9.170087298002626, 48.782296385131048],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 685, height: 49 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3040.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213480389231686, 48.796119476183236],
+        coordinates: [9.170214946868175, 48.782265134077313],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 686, height: 49 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3050.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213615722914135, 48.796109556452848],
+        coordinates: [9.170342595574906, 48.782233882882217],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 687, height: 48 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3060.0,
+        angle: 110.19980662226551,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213751056542705, 48.796099636563589],
+        coordinates: [9.17047024412282, 48.782202631545765],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 688, height: 48 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3070.0,
+        angle: 103.29857032516449,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.213886390117397, 48.796089716515539],
+        coordinates: [9.170601675880354, 48.78217962096911],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 689, height: 47 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3080.0,
+        angle: 93.900493740585432,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214021723638206, 48.796079796308632],
+        coordinates: [9.170735949336857, 48.78216677195374],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 690, height: 47 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3090.0,
+        angle: 93.900493740585432,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214157057105137, 48.796069875942898],
+        coordinates: [9.170871739372624, 48.782160451322234],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 691, height: 46 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3100.0,
+        angle: 87.732045465939876,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214292390518182, 48.796059955418315],
+        coordinates: [9.171007677045738, 48.782160047478648],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 692, height: 46 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3110.0,
+        angle: 87.732045465939876,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214427723877341, 48.796050034734911],
+        coordinates: [9.171143708617931, 48.782163405539414],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 693, height: 45 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3120.0,
+        angle: 77.7160445578631,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214563057182616, 48.79604011389268],
+        coordinates: [9.171278594385246, 48.782172802263219],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 694, height: 45 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3130.0,
+        angle: 77.7160445578631,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214698390434004, 48.796030192891614],
+        coordinates: [9.171411669109556, 48.782191743956183],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 695, height: 44 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3140.0,
+        angle: 77.7160445578631,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214833723631504, 48.796020271731706],
+        coordinates: [9.171544743933634, 48.782210685495308],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 696, height: 44 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3150.0,
+        angle: 74.783673288058324,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.214969056775116, 48.796010350412963],
+        coordinates: [9.171676841945844, 48.782232291168143],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 697, height: 43 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3160.0,
+        angle: 74.783673288058324,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215104389864836, 48.796000428935393],
+        coordinates: [9.171808276472985, 48.782255706503634],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 698, height: 43 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3170.0,
+        angle: 74.783673288058324,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215239722900668, 48.79599050729901],
+        coordinates: [9.17193971112204, 48.782279121689022],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 699, height: 42 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3180.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215375055882605, 48.795980585503763],
+        coordinates: [9.172064814651614, 48.782313874141501],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 700, height: 42 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3190.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215510388810648, 48.795970663549696],
+        coordinates: [9.172187756821884, 48.78235249714993],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 701, height: 41 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3200.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215645721684799, 48.795960741436801],
+        coordinates: [9.172310699180553, 48.782391120026766],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 702, height: 41 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3210.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215781054505051, 48.795950819165071],
+        coordinates: [9.17243364172762, 48.782429742771967],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 703, height: 40 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3220.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.215916387271408, 48.7959408967345],
+        coordinates: [9.172556584463084, 48.782468365385569],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 704, height: 40 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3230.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216051719983868, 48.795930974145101],
+        coordinates: [9.172679527386949, 48.782506987867528],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 705, height: 39 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3240.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216186743629807, 48.795919594865332],
+        coordinates: [9.17280247049921, 48.782545610217895],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 706, height: 39 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3250.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216320990358202, 48.795904553761524],
+        coordinates: [9.172925413799868, 48.782584232436633],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 707, height: 38 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3260.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21645523700583, 48.795889512501432],
+        coordinates: [9.173048357288922, 48.782622854523765],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 708, height: 38 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3270.0,
+        angle: 64.444955877523597,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216589483572685, 48.795874471085071],
+        coordinates: [9.173171300966374, 48.782661476479269],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 709, height: 37 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3280.0,
+        angle: 62.300527192537935,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216723730058767, 48.795859429512433],
+        coordinates: [9.173292657662396, 48.782702202301024],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 710, height: 37 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3290.0,
+        angle: 62.300527192537935,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216857976464077, 48.795844387783525],
+        coordinates: [9.173413328769412, 48.782743837093754],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 711, height: 36 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3300.0,
+        angle: 62.300527192537935,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.216992222788614, 48.795829345898333],
+        coordinates: [9.173534000075808, 48.782785471759595],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 712, height: 36 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3310.0,
+        angle: 62.300527192537935,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.217126469032374, 48.795814303856858],
+        coordinates: [9.173654671581584, 48.782827106298583],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 713, height: 35 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3320.0,
+        angle: 62.300527192537935,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21726071519536, 48.795799261659127],
+        coordinates: [9.173775343286739, 48.782868740710683],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 714, height: 35 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3330.0,
+        angle: 62.300527192537935,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.217394961277568, 48.795784219305126],
+        coordinates: [9.173896015191275, 48.782910374995943],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 715, height: 34 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3340.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.217529207278996, 48.795769176794849],
+        coordinates: [9.174015457916129, 48.782953517287901],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 716, height: 34 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3350.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.217663453199647, 48.795754134128302],
+        coordinates: [9.174134456847412, 48.78299720412911],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 717, height: 33 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3360.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.217797699039517, 48.795739091305471],
+        coordinates: [9.174253455985033, 48.783040890846912],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 718, height: 33 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3370.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.217931944798607, 48.79572404832637],
+        coordinates: [9.17437245532899, 48.783084577441279],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 719, height: 32 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3380.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218066190476913, 48.795709005191],
+        coordinates: [9.174491454879282, 48.783128263912211],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 720, height: 32 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3390.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218200436074437, 48.795693961899353],
+        coordinates: [9.174610454635911, 48.783171950259707],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 721, height: 31 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3400.0,
+        angle: 60.815400027731663,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218334681591173, 48.795678918451443],
+        coordinates: [9.174729454598873, 48.78321563648376],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 722, height: 31 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3410.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218468927027127, 48.795663874847271],
+        coordinates: [9.174848755643794, 48.783258954656283],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 723, height: 30 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3420.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218603172382291, 48.795648831086808],
+        coordinates: [9.174969260808103, 48.783300800484461],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 724, height: 30 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3430.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218734844490877, 48.795626954573045],
+        coordinates: [9.175089766172533, 48.783342646186085],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 725, height: 29 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3440.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218864107864354, 48.79559868227711],
+        coordinates: [9.175210271737079, 48.78338449176119],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 726, height: 29 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3450.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.218993371092123, 48.795570409836287],
+        coordinates: [9.175330777501747, 48.783426337209768],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 727, height: 28 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3460.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.219122634174187, 48.795542137250564],
+        coordinates: [9.175451283466534, 48.783468182531806],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 728, height: 28 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3470.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.219251897110542, 48.795513864519954],
+        coordinates: [9.175571789631441, 48.783510027727324],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 729, height: 27 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3480.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.219381159901191, 48.795485591644471],
+        coordinates: [9.175692295996466, 48.783551872796309],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 730, height: 27 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3490.0,
+        angle: 62.147619881576198,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.219510422546131, 48.795457318624109],
+        coordinates: [9.175812802561611, 48.783593717738761],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 731, height: 26 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3500.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21963968504536, 48.795429045458846],
+        coordinates: [9.175933923284719, 48.78363476889524],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 732, height: 26 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3510.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.21976894739888, 48.795400772148717],
+        coordinates: [9.176055822420988, 48.783674813926034],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 733, height: 25 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3520.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.219898209606688, 48.795372498693688],
+        coordinates: [9.176177721750959, 48.783714858827402],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 734, height: 25 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3530.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220027471668788, 48.795344225093778],
+        coordinates: [9.176299621274628, 48.783754903599345],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 735, height: 24 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3540.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220156733585172, 48.795315951348996],
+        coordinates: [9.176421520991999, 48.783794948241869],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 736, height: 24 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3550.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220285995355846, 48.795287677459321],
+        coordinates: [9.176543420903068, 48.78383499275494],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 737, height: 23 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3560.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220415256980804, 48.795259403424765],
+        coordinates: [9.176665321007839, 48.7838750371386],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 738, height: 23 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3570.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220544518460049, 48.795231129245337],
+        coordinates: [9.176787221306308, 48.783915081392827],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 739, height: 22 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3580.0,
+        angle: 63.434948822785749,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220673779793579, 48.79520285492103],
+        coordinates: [9.176909121798477, 48.7839551255176],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 740, height: 22 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3590.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.220803040981393, 48.795174580451835],
+        coordinates: [9.177029761043132, 48.783996786070695],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 741, height: 21 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3600.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.22093230202349, 48.795146305837754],
+        coordinates: [9.177149818466496, 48.784039192368404],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 742, height: 21 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3610.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221061562919873, 48.7951180310788],
+        coordinates: [9.17726987609192, 48.784081598540503],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 743, height: 20 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3620.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221190823670536, 48.79508975617496],
+        coordinates: [9.177389933919397, 48.784124004586992],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 744, height: 20 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3630.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221320084275479, 48.795061481126254],
+        coordinates: [9.177509991948931, 48.784166410507893],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 745, height: 19 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3640.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221449344734705, 48.795033205932675],
+        coordinates: [9.177630050180522, 48.784208816303156],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 746, height: 19 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3650.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221572380020834, 48.794995919581574],
+        coordinates: [9.177750108614168, 48.784251221972838],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 747, height: 18 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3660.0,
+        angle: 61.74197038538545,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221689402485639, 48.794949929556317],
+        coordinates: [9.177870167249869, 48.784293627516874],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 748, height: 18 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3670.0,
+        angle: 84.289406862612921,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221806424736252, 48.794903939412194],
+        coordinates: [9.178000895340402, 48.784312754636744],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 749, height: 17 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3680.0,
+        angle: 84.289406862612921,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.221923446772674, 48.794857949149225],
+        coordinates: [9.178136383293099, 48.784321496634448],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 750, height: 17 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3690.0,
+        angle: 84.289406862612921,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222040468594905, 48.79481195876739],
+        coordinates: [9.178271871292431, 48.784330238472791],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 751, height: 16 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3700.0,
+        angle: 112.96377306135345,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222157490202944, 48.794765968266702],
+        coordinates: [9.178405779667798, 48.784332206424686],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 752, height: 16 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3710.0,
+        angle: 112.96377306135345,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222274511596792, 48.794719977647169],
+        coordinates: [9.178530998875999, 48.784296914884465],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 753, height: 15 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3720.0,
+        angle: 112.96377306135345,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222391532776451, 48.794673986908776],
+        coordinates: [9.178656217908298, 48.784261623208209],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 754, height: 15 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3730.0,
+        angle: 124.50852296342229,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222508553741914, 48.794627996051531],
+        coordinates: [9.178777016707926, 48.784221033811662],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 755, height: 14 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3740.0,
+        angle: 85.601294643979017,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222606902621505, 48.794566826600004],
+        coordinates: [9.178906805364933, 48.784199791104804],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 756, height: 14 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3750.0,
+        angle: 78.366365998241648,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222698964149538, 48.794500546237693],
+        coordinates: [9.17904104269787, 48.784213725266937],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 757, height: 13 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3760.0,
+        angle: 47.489552926060583,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222791025435072, 48.794434265801456],
+        coordinates: [9.179150220771747, 48.784265505667854],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 758, height: 13 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3770.0,
+        angle: 44.999999996821529,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222883086478106, 48.794367985291274],
+        coordinates: [9.179248280706513, 48.784327875419599],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 759, height: 12 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3780.0,
+        angle: 34.6409475115737,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.222975147278641, 48.794301704707166],
+        coordinates: [9.179332524443188, 48.784398114174195],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 760, height: 12 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3790.0,
+        angle: 33.690067526635701,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.223067207836678, 48.794235424049106],
+        coordinates: [9.179409835948752, 48.784472156456559],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 761, height: 11 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3800.0,
+        angle: 33.690067526635701,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.223173105257192, 48.794179683187011],
+        coordinates: [9.179485615472409, 48.784546889390306],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 762, height: 11 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3810.0,
+        angle: 33.690067526635701,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.223285428839484, 48.7941288372716],
+        coordinates: [9.179561395221267, 48.784621622273001],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 763, height: 10 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3820.0,
+        angle: 34.30976172613984,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.223397752194563, 48.794077991246617],
+        coordinates: [9.179637955944239, 48.784696005331213],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 764, height: 10 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3830.0,
+        angle: 34.30976172613984,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.22351007532243, 48.794027145112075],
+        coordinates: [9.179714954851185, 48.784770192133429],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 765, height: 9 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3840.0,
+        angle: 34.30976172613984,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.22362239822308, 48.79397629886796],
+        coordinates: [9.179791953985276, 48.784844378882973],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 766, height: 9 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3850.0,
+        angle: 30.762719533274439,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.223726284820671, 48.793918313930256],
+        coordinates: [9.179865139795178, 48.784920181658244],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 767, height: 8 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3860.0,
+        angle: 30.762719533274439,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.22382818727659, 48.793858650128584],
+        coordinates: [9.179935046231856, 48.784997374188329],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 768, height: 8 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3870.0,
+        angle: 11.782325134882223,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.223930089490771, 48.793798986236546],
+        coordinates: [9.179966308722575, 48.785084578416857],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 769, height: 7 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3880.0,
+        angle: 9.4623222071476878,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224031991463223, 48.793739322254169],
+        coordinates: [9.17999391789499, 48.78517266191686],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 770, height: 7 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3890.0,
+        angle: 9.4623222071476878,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224133969027116, 48.793679718939849],
+        coordinates: [9.180016615588208, 48.785261362063864],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 771, height: 6 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3900.0,
+        angle: 3.5763343749973471,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224242029513148, 48.79362498942703],
+        coordinates: [9.180036266623395, 48.785350297103513],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 772, height: 6 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3910.0,
+        angle: 3.5763343749973471,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224350089763959, 48.793570259812725],
+        coordinates: [9.180045079645927, 48.785440067736701],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 773, height: 5 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3920.0,
+        angle: 15.642246456818878,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224458149779553, 48.79351553009694],
+        coordinates: [9.18006675149222, 48.785528379087793],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 774, height: 5 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3930.0,
+        angle: 15.642246456818878,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224566209559926, 48.793460800279689],
+        coordinates: [9.180103767587587, 48.785614949098083],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 775, height: 4 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3940.0,
+        angle: 35.073754494148062,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224670577627375, 48.793403159363244],
+        coordinates: [9.18017157568937, 48.785691816693507],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 776, height: 4 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3950.0,
+        angle: 27.613027823538019,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224771054643274, 48.793342450169035],
+        coordinates: [9.180242831181282, 48.785768245740037],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 777, height: 3 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3960.0,
+        angle: 27.613027823538019,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224871531416664, 48.793281740886961],
+        coordinates: [9.180306215349402, 48.785847859629492],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 778, height: 3 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3970.0,
+        angle: 40.155999625472752,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.224972007947548, 48.793221031517021],
+        coordinates: [9.180390926131667, 48.785917960714407],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 779, height: 2 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3980.0,
+        angle: 71.221966777652298,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.225072484235923, 48.793160322059229],
+        coordinates: [9.180503417038796, 48.785967774901671],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 780, height: 2 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 3990.0,
+        angle: 71.221966777652298,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.225176163805333, 48.79310215823174],
+        coordinates: [9.180632411132125, 48.785996531055758],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 781, height: 1 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 4000.0,
+        angle: 66.929587748916873,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.225284846344859, 48.79304797016411],
+        coordinates: [9.180758048088448, 48.786031130906494],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 782, height: 1 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 4010.0,
+        angle: 36.06438615974011,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.22539352865015, 48.792993781993864],
+        coordinates: [9.180854803730933, 48.786090075292016],
       },
     },
     {
       type: "Feature",
-      properties: { fid: 783, height: 0 },
+      properties: {
+        fid: 1,
+        height: null,
+        distance: 4020.0,
+        angle: 36.06438615974011,
+      },
       geometry: {
         type: "Point",
-        coordinates: [9.225502210721203, 48.792939593720988],
+        coordinates: [9.180935207988894, 48.786162668464328],
       },
     },
   ],
