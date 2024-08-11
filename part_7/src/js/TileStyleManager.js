@@ -15,10 +15,17 @@ class TileStyleManager {
     this.tileset.style = style;
   };
 
+  generateColors = (numColors) => {
+    return chroma.scale('Spectral').mode('lab').colors(numColors);
+  };
+
   terrainHeightStyle = () => {
-    const terrainConditions = terrainHeight.conditions.map((condition) => [
+    const numConditions = terrainHeight.conditions.length;
+    const colors = this.generateColors(numConditions);
+
+    const terrainConditions = terrainHeight.conditions.map((condition, index) => [
       "${TerrainHeight} > " + condition.height,
-      "color('" + condition.color + "')",
+      "color('" + colors[index] + "')"
     ]);
 
     terrainConditions.push(["true", "color('gray')"]);
@@ -27,9 +34,12 @@ class TileStyleManager {
   };
 
   roofTypeStyle = () => {
-    const colorConditions = roofType.features.map((feature) => [
+    const numFeatures = roofType.features.length;
+    const colors = this.generateColors(numFeatures);
+
+    const colorConditions = roofType.features.map((feature, index) => [
       "Number(${RoofType}) === " + feature.value,
-      "color('" + feature.color + "')",
+      "color('" + colors[index] + "')"
     ]);
 
     colorConditions.push(["true", "color('gray')"]);
