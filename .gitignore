@@ -4,3 +4,4 @@ dtm/
 *.zip
 .vscode
 node_modules/
+dist/
