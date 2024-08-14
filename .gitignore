@@ -3,3 +3,4 @@ dtm/
 *.tif
 *.zip
 .vscode
+node_modules/
