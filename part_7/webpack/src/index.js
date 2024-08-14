@@ -1,7 +1,7 @@
 import { Ion, Viewer, createWorldTerrainAsync, Cesium3DTileset } from "cesium";
 import TileStyleManager from "./js/TileStyleManager.js";
 import { accessToken, assetId } from "./js/CesiumConfig.js";
-import "cesium/Widgets/widgets.css";
+import 'cesium/Build/Cesium/Widgets/widgets.css';
 import "bootstrap/dist/css/bootstrap.css";
 import './css/main.css'
 
