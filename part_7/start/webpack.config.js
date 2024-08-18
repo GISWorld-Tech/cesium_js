@@ -1,3 +1,6 @@
+// link to the latest cesium webpack config
+// https://github.com/CesiumGS/cesium-webpack-example/blob/main/webpack-5/webpack.config.js
+
 "use strict";
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");

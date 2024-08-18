@@ -6,11 +6,11 @@ import {
   Cartesian3,
   Math,
 } from "cesium";
-import "cesium/Widgets/widgets.css";
-import "../src/css/main.css";
+import "cesium/Build/Cesium/Widgets/widgets.css";
+import "./css/main.css";
+import { accessToken } from "./js/CesiumConfig";
 
-// Your access token can be found at: https://cesium.com/ion/tokens.
-// Ion.defaultAccessToken = "YOUR TOKEN HERE";
+Ion.defaultAccessToken = accessToken;
 
 // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
 const viewer = new Viewer("cesiumContainer", {
