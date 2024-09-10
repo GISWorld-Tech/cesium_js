@@ -5,3 +5,4 @@ dtm/
 .vscode
 node_modules/
 dist/
+.idea
