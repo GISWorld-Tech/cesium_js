@@ -12,12 +12,12 @@ const roofType = {
 };
 
 const terrainHeight = {
-    conditions: [{value: 110}, {value: 108}, {value: 106}, {value: 104}, {value: 100}, {value: 0}]
+    conditions: [{value: 110}, {value: 108}, {value: 106}, {value: 104}, {value: 100}]
 };
 
 const pointCould = {
     conditions: [
-        {value: 1}, {value: 2}, {value: 17}, {value: 18}, {value: 24}, {value: 41}, {value: 58}, {value: 20}, {value: 0}
+        {value: 1}, {value: 2}, {value: 17}, {value: 18}, {value: 24}, {value: 41}, {value: 58}, {value: 20}
     ]
 }
 

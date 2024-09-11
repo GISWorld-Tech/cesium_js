@@ -3,15 +3,17 @@ import {Cesium3DTileStyle} from "cesium";
 import chroma from "chroma-js";
 
 export default class TileStyleManager {
-    constructor(tileSet) {
-        this.tileSet = tileSet;
+    constructor(tileSetCityGml, tileSetPointCloud) {
+        this.tileSetCityGml = tileSetCityGml;
+        this.tileSetPointCloud = tileSetPointCloud;
     }
 
-    applyStyle = (conditions) => {
-        this.tileSet.style = new Cesium3DTileStyle({
+    applyStyle = (tileSet, conditions, show = 'true') => {
+        tileSet.style = new Cesium3DTileStyle({
             color: {
                 conditions: conditions,
             },
+            show: show,
         });
     };
 
@@ -27,7 +29,7 @@ export default class TileStyleManager {
             ["${TerrainHeight} > " + condition.value, "color('" + colors[index] + "')"]);
 
         colorConditions.push(["true", "color('" + colors[numConditions] + "')"]);
-        this.applyStyle(colorConditions);
+        this.applyStyle(this.tileSetCityGml, colorConditions);
     };
 
     roofTypeStyle = () => {
@@ -39,18 +41,23 @@ export default class TileStyleManager {
         );
 
         colorConditions.push(["true", "color('" + colors[numConditions] + "')"]);
-        this.applyStyle(colorConditions);
+        this.applyStyle(this.tileSetCityGml, colorConditions);
     };
 
-    pointCloudlStyle = (className) => {
-        const numFeatures = className !== 'radioAll' ? pointCould.conditions.length : 1;
-        const colors = this.generateColors(numFeatures);
+    pointCloudlStyle = (className, classNum=1, classColor='green') => {
+        if (className === "radioAll") {
+            const numConditions = pointCould.conditions.length;
+            const colors = this.generateColors(numConditions);
 
-        const colorConditions = pointCould.conditions.map((condition, index) =>
-            ["${Classification} === " + condition.value, "color('" + colors[index] + "')"]
-        )
+            const colorConditions = pointCould.conditions.map((condition, index) =>
+                ["${Classification} === " + condition.value, "color('" + colors[index] + "')"]
+            );
+            this.applyStyle(this.tileSetPointCloud, colorConditions);
 
-        colorConditions.push(["true", "color('" + colors[numFeatures] + "')"]);
-        this.applyStyle(colorConditions);
+        } else {
+            const colorCondition = [["${Classification} ===" + classNum, "color('" + classColor + "')"]]
+            const showQuery = "${feature['Classification']} ===" +  classNum
+            this.applyStyle(this.tileSetPointCloud, colorCondition, showQuery)
+        }
     }
 }
