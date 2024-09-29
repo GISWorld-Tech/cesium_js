@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+  <meta charset="utf-8"/>
 </head>
 
 <body>
 <section class="container-fluid">
 
-    <div class="row position-relative">
-        <button class="btn btn-primary col-lg-2 col-1 position-absolute ms-3 mt-3 z-3" type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-            Filtering Config
-        </button>
-        <div id="cesiumContainer" class="h-100 p-0 m-0"></div>
-    </div>
+  <div class="row position-relative">
+    <button class="btn btn-primary col-lg-2 col-1 position-absolute ms-3 mt-3 z-3" type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+      Filtering Config
+    </button>
+    <div id="cesiumContainer" class="h-100 p-0 m-0"></div>
+  </div>
 
-    <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">Filtering configurations</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div class="row">
-                <div class="col-6 text-light align-items-center">Building Category</div>
-                <div class="col-6 btn-group">
-                    <input type="radio" class="btn-check" name="btn-radio" id="btn-terrain" checked/>
-                    <label for="btn-terrain" class="btn btn-outline-primary">Terrain</label>
-                    <input type="radio" class="btn-check" name="btn-radio" id="btn-roof"/>
-                    <label for="btn-roof" class="btn btn-outline-primary">Roof</label>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col-6 text-light align-items-center">
-                    Point cloud classification
-                </div>
-                <div class="col-6 text-light">
-                    <div class="form-switch">
-                        <input class="form-check-input" type="radio" role="switch" name="classification" id="radioTree">
-                        <label class="form-check-label ms-3" for="radioTree">
-                            Trees
-                        </label>
-                    </div>
-                    <div class="form-switch">
-                        <input class="form-check-input" type="radio" role="switch" name="classification" id="radioWater">
-                        <label class="form-check-label ms-3" for="radioWater">
-                            Water
-                        </label>
-                    </div>
-                    <div class="form-switch">
-                        <input class="form-check-input" type="radio" role="switch" name="classification" id="radioBridge">
-                        <label class="form-check-label ms-3" for="radioBridge">
-                            Bridge
-                        </label>
-                    </div>
-                    <div class="form-switch">
-                        <input class="form-check-input" type="radio" role="switch" name="classification" id="radioAll">
-                        <label class="form-check-label ms-3" for="radioAll">
-                            All Data
-                        </label>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+       id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">Filtering configurations</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
+    <div class="offcanvas-body">
+      <div class="row">
+        <div class="col-6 text-light align-items-center">Building Category</div>
+        <div class="col-6 btn-group">
+          <input type="radio" class="btn-check" name="btn-radio" id="btn-terrain" checked/>
+          <label for="btn-terrain" class="btn btn-outline-primary">Terrain</label>
+          <input type="radio" class="btn-check" name="btn-radio" id="btn-roof"/>
+          <label for="btn-roof" class="btn btn-outline-primary">Roof</label>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-6 text-light align-items-center">
+          Point cloud classification
+        </div>
+        <div class="col-6 text-light">
+          <div class="form-switch">
+            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioTree">
+            <label class="form-check-label ms-3" for="radioTree">
+              Trees
+            </label>
+          </div>
+          <div class="form-switch">
+            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioWater">
+            <label class="form-check-label ms-3" for="radioWater">
+              Water
+            </label>
+          </div>
+          <div class="form-switch">
+            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioBridge">
+            <label class="form-check-label ms-3" for="radioBridge">
+              Bridge
+            </label>
+          </div>
+          <div class="form-switch">
+            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioAll">
+            <label class="form-check-label ms-3" for="radioAll">
+              All Data
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>
 </body>
