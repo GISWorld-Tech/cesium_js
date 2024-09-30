@@ -1,7 +1,6 @@
-const accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwZDNjMzA1Mi04ZGNmLTQ5YTgtOThjZi00NzZhNWMzNj" +
-  "FkZDIiLCJpZCI6MTkxNTA0LCJpYXQiOjE3MjM0OTE3MTh9.iv_r8IxVBItODjZWmSO8WjFCxSSrmu6rQ7qnGYxZNkM";
+const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwZDNjMzA1Mi04ZGNmLTQ5YTgtOThjZi00NzZhNWMzNj' +
+  'FkZDIiLCJpZCI6MTkxNTA0LCJpYXQiOjE3MjM0OTE3MTh9.iv_r8IxVBItODjZWmSO8WjFCxSSrmu6rQ7qnGYxZNkM';
 
-// TODO 1: add point cloud assetId
-const assetId = 2729681;
+const assetIds = { cityGml: 2729681, pointCloud: 2729281 };
 
-export {accessToken, assetId};
+export { accessToken, assetIds };
