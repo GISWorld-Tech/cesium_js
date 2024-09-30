@@ -6,3 +6,4 @@ dtm/
 node_modules/
 dist/
 .idea
+.prettierrc
