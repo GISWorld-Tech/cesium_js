@@ -3,9 +3,10 @@ import "bootstrap/dist/js/bootstrap";
 import "./css/main.css";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 import axios from "axios";
-import { Ion, IonResource, Viewer } from "cesium";
-import { accessToken } from "./js/CesiumConfig";
-import { addCorridors, addPoint, addWall } from "./js/EntityType";
+import { Cesium3DTileset, createWorldTerrainAsync, Ion, IonResource, Viewer } from "cesium";
+import { accessToken, assetId } from "./js/CesiumConfig";
+import { addCorridors, addPoint } from "./js/EntityType";
+import TileStyleManager from "./js/TileStyleManager";
 
 Ion.defaultAccessToken = accessToken;
 
@@ -14,22 +15,28 @@ const resources = {
   tree: await IonResource.fromAssetId(2760510)
 };
 
-const viewer = new Viewer("cesiumContainer");
+const viewer = new Viewer("cesiumContainer", {
+  terrainProvider: await createWorldTerrainAsync()
+});
+
+const tileSet = await Cesium3DTileset.fromIonAssetId(assetId.cityGml);
+viewer.scene.primitives.add(tileSet)
+await viewer.zoomTo(tileSet)
+const styleManager = new TileStyleManager(tileSet);
+styleManager.terrainHeightStyle();
+
 const apiPolygonUrl = "https://gisworld-tech.com/cesium/polygon/?format=json";
 const apiPointUrl = "https://gisworld-tech.com/cesium/point/?format=json";
-const apiLinestringUrl = "https://gisworld-tech.com/cesium/linestring/?format=json";
 
 const fetchAllData = (update = false) => {
   axios.all([
     axios.get(apiPolygonUrl),
-    axios.get(apiPointUrl),
-    axios.get(apiLinestringUrl)
+    axios.get(apiPointUrl)
   ])
-    .then(axios.spread((response1, response2, response3) => {
+    .then(axios.spread((response1, response2) => {
       update && viewer.entities.removeAll();
       addCorridors(viewer, response1.data.features);
       addPoint(viewer, response2.data.features, resources);
-      addWall(viewer, response3.data.features);
       !update && viewer.zoomTo(viewer.entities);
     }))
     .catch(error => console.log(error));
