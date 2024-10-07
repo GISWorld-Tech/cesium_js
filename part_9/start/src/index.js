@@ -3,28 +3,21 @@ import "bootstrap/dist/js/bootstrap";
 import "./css/main.css";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 import axios from "axios";
-import { Cartesian3, Color, Ion, Viewer } from "cesium";
+import { Ion, IonResource, Viewer } from "cesium";
 import { accessToken } from "./js/CesiumConfig";
+import { addCorridors, addPoint, addWall } from "./js/EntityType";
 
 Ion.defaultAccessToken = accessToken;
+
+const resources = {
+  car: await IonResource.fromAssetId(2656957),
+  tree: await IonResource.fromAssetId(2760510)
+};
 
 const viewer = new Viewer("cesiumContainer");
 const apiPolygonUrl = "https://gisworld-tech.com/cesium/polygon/?format=json";
 const apiPointUrl = "https://gisworld-tech.com/cesium/point/?format=json";
 const apiLinestringUrl = "https://gisworld-tech.com/cesium/linestring/?format=json";
-
-const addCorridors = (features) => {
-  features.forEach(feature => {
-    viewer.entities.add({
-      name: feature.properties.usage,
-      corridor: {
-        positions: Cartesian3.fromDegreesArray(feature.geometry.coordinates[0].flat()),
-        width: 1,
-        material: Color.RED
-      }
-    });
-  });
-};
 
 const fetchAllData = (update = false) => {
   axios.all([
@@ -34,8 +27,9 @@ const fetchAllData = (update = false) => {
   ])
     .then(axios.spread((response1, response2, response3) => {
       update && viewer.entities.removeAll();
-      addCorridors(response1.data.features);
-
+      addCorridors(viewer, response1.data.features);
+      addPoint(viewer, response2.data.features, resources);
+      addWall(viewer, response3.data.features);
       !update && viewer.zoomTo(viewer.entities);
     }))
     .catch(error => console.log(error));
