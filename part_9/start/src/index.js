@@ -10,10 +10,7 @@ import TileStyleManager from "./js/TileStyleManager";
 
 Ion.defaultAccessToken = accessToken;
 
-const resources = {
-  car: await IonResource.fromAssetId(2656957),
-  tree: await IonResource.fromAssetId(2760510)
-};
+// todo 1: add resources
 
 const viewer = new Viewer("cesiumContainer", {
   terrainProvider: await createWorldTerrainAsync()
@@ -25,23 +22,5 @@ await viewer.zoomTo(tileSet)
 const styleManager = new TileStyleManager(tileSet);
 styleManager.terrainHeightStyle();
 
-const apiPolygonUrl = "https://gisworld-tech.com/cesium/polygon/?format=json";
-const apiPointUrl = "https://gisworld-tech.com/cesium/point/?format=json";
-
-const fetchAllData = (update = false) => {
-  axios.all([
-    axios.get(apiPolygonUrl),
-    axios.get(apiPointUrl)
-  ])
-    .then(axios.spread((response1, response2) => {
-      update && viewer.entities.removeAll();
-      addCorridors(viewer, response1.data.features);
-      addPoint(viewer, response2.data.features, resources);
-      !update && viewer.zoomTo(viewer.entities);
-    }))
-    .catch(error => console.log(error));
-};
-
-fetchAllData();
-
-document.getElementById("fetchDataButton").addEventListener("click", () => fetchAllData(true));
+// todo 2: fetch all the data from cesium/polygon/?format=json
+// todo 4: adding an option without refreshing page data updated from api
