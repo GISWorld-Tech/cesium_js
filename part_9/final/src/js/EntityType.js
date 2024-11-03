@@ -1,6 +1,3 @@
-// todo 3: add point and add corridor function
-// todo 3: note: all the geometries have to be clamped on cesium terrain
-
 import { Cartesian3, Cartographic, Color, sampleTerrainMostDetailed } from "cesium";
 
 const addCorridors = (viewer, features) => {
@@ -32,11 +29,9 @@ const addPoint = async (viewer, features, resource) => {
     viewer.entities.add({
       name: feature.properties.usage,
       position: cartesianPosition,
-      model: { url: resource[feature.properties.usage] }
+      model: { uri: resource[feature.properties.usage] }
     });
   });
 };
-
-
 
 export { addCorridors, addPoint };
