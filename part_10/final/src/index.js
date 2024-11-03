@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./css/main.css";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 
@@ -12,11 +13,13 @@ import { accessToken, assetIds } from "./js/CesiumConfig.js";
 Ion.defaultAccessToken = accessToken;
 
 const viewer = new Viewer("cesiumContainer", {
-  terrainProvider: await createWorldTerrainAsync()
+  terrainProvider: await createWorldTerrainAsync(),
 });
 
 const tileSetCityGml = await Cesium3DTileset.fromIonAssetId(assetIds.cityGml);
-const tileSetPointCloud = await Cesium3DTileset.fromIonAssetId(assetIds.pointCloud);
+const tileSetPointCloud = await Cesium3DTileset.fromIonAssetId(
+  assetIds.pointCloud,
+);
 viewer.scene.primitives.add(tileSetCityGml);
 viewer.scene.primitives.add(tileSetPointCloud);
 tileSetPointCloud.show = false;
@@ -27,36 +30,30 @@ const styleManager = new TileStyleManager(tileSetCityGml, tileSetPointCloud);
 styleManager.terrainHeightStyle();
 
 const unCheckedRadioButtons = () => {
-  document.querySelectorAll("input[name='classification']").forEach(radio => radio.checked = false);
+  document
+    .querySelectorAll("input[name='classification']")
+    .forEach((radio) => (radio.checked = false));
 };
 
-document
-  .getElementById("btn-terrain")
-  .addEventListener("click", () => {
-    tileSetPointCloud.show = false;
-    unCheckedRadioButtons();
-    styleManager.terrainHeightStyle();
-  });
+document.getElementById("btn-terrain").addEventListener("click", () => {
+  tileSetPointCloud.show = false;
+  unCheckedRadioButtons();
+  styleManager.terrainHeightStyle();
+});
+
+document.getElementById("btn-roof").addEventListener("click", () => {
+  tileSetPointCloud.show = false;
+  unCheckedRadioButtons();
+  styleManager.roofTypeStyle();
+});
 
 document
-  .getElementById("btn-roof")
-  .addEventListener("click", () => {
-    tileSetPointCloud.show = false;
-    unCheckedRadioButtons();
-    styleManager.roofTypeStyle();
-  });
-
-document.querySelectorAll("input[name='classification']").forEach((radio) => {
-  radio.addEventListener("change", (event) => {
-    tileSetPointCloud.show = true;
-    if (event.target.id === "radioTree") {
-      styleManager.pointCloudStyle("radioTree", 1, "green");
-    } else if (event.target.id === "radioWater") {
-      styleManager.pointCloudStyle("radioWater", 9, "blue");
-    } else if (event.target.id === "radioBridge") {
-      styleManager.pointCloudStyle("radioBridge", 17, "brown");
+  .getElementById("activePointCloud")
+  .addEventListener("change", (event) => {
+    if (event.target.checked) {
+      tileSetPointCloud.show = true;
+      styleManager.pointCloudStyle();
     } else {
-      styleManager.pointCloudStyle("radioAll");
+      tileSetPointCloud.show = false;
     }
   });
-});

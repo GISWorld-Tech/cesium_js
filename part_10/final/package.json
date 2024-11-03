@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "cesium": "^1.114.0",
     "chroma-js": "^2.6.1-0",
     "prettier": "^3.3.3"

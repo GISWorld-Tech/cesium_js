@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
+  <title>Zero to Hero CesiumJS tutorial</title>
 </head>
 
 <body>
@@ -24,46 +25,34 @@
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
+    <hr class="bold-hr" />
+
     <div class="offcanvas-body">
       <div class="row">
         <div class="col-6 text-light align-items-center">Building Category</div>
         <div class="col-6 btn-group">
-          <input type="radio" class="btn-check" name="btn-radio" id="btn-terrain" checked/>
+          <input type="radio" class="btn-check" name="btn-radio" id="btn-terrain" checked />
           <label for="btn-terrain" class="btn btn-outline-primary">Terrain</label>
-          <input type="radio" class="btn-check" name="btn-radio" id="btn-roof"/>
+          <input type="radio" class="btn-check" name="btn-radio" id="btn-roof" />
           <label for="btn-roof" class="btn btn-outline-primary">Roof</label>
         </div>
       </div>
 
-      <br><br>
+      <hr class="bold-hr" />
 
       <div class="row">
         <div class="col-6 text-light align-items-center">
-          Point cloud classification
+          Point Cloud
         </div>
 
         <div class="col-6 text-light">
           <div class="form-switch">
-            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioTree">
-            <label class="form-check-label ms-3" for="radioTree">Trees</label>
-          </div>
-
-          <div class="form-switch">
-            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioWater">
-            <label class="form-check-label ms-3" for="radioWater">Water</label>
-          </div>
-
-          <div class="form-switch">
-            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioBridge">
-            <label class="form-check-label ms-3" for="radioBridge">Bridge</label>
-          </div>
-
-          <div class="form-switch">
-            <input class="form-check-input" type="radio" role="switch" name="classification" id="radioAll">
-            <label class="form-check-label ms-3" for="radioAll">All Data</label>
+            <input class="form-check-input" type="checkbox" role="switch" name="classification" id="activePointCloud" />
+            <label class="form-check-label ms-3" for="activePointCloud"></label>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
