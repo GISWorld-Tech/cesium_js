@@ -21,10 +21,15 @@ const tileSetPointCloud = await Cesium3DTileset.fromIonAssetId(
   assetIds.pointCloud,
 );
 const tileSetBim = await Cesium3DTileset.fromIonAssetId(assetIds.bim);
+const tileSetGoogle = await Cesium3DTileset.fromIonAssetId(
+  assetIds.googlePhotorealistic,
+);
 viewer.scene.primitives.add(tileSetCityGml);
 viewer.scene.primitives.add(tileSetPointCloud);
 viewer.scene.primitives.add(tileSetBim);
+viewer.scene.primitives.add(tileSetGoogle);
 tileSetPointCloud.show = false;
+tileSetGoogle.show = false;
 
 await viewer.zoomTo(tileSetCityGml);
 
@@ -65,3 +70,15 @@ document.getElementById("zoomToBIM").addEventListener("click", () => {
 document.getElementById("isBIMData").addEventListener("change", (event) => {
   tileSetBim.show = !!event.target.checked;
 });
+
+document
+  .getElementById("isGooglePhotorealistic")
+  .addEventListener("change", (event) => {
+    if (event.target.checked) {
+      tileSetGoogle.show = true;
+      tileSetCityGml.show = false;
+    } else {
+      tileSetGoogle.show = false;
+      tileSetCityGml.show = true;
+    }
+  });
