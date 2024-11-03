@@ -7,6 +7,7 @@ const assetIds = {
   pointCloud: 2729281,
   bim: 2802103,
   googlePhotorealistic: 2275207,
+  aircraft: 2656960,
 };
 
 export { accessToken, assetIds };

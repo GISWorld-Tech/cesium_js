@@ -4,11 +4,20 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "./css/main.css";
 import "cesium/Build/Cesium/Widgets/widgets.css";
 
-import { Cesium3DTileset, createWorldTerrainAsync, Ion, Viewer } from "cesium";
+import {
+  Cesium3DTileset,
+  createWorldTerrainAsync,
+  Ion,
+  IonResource,
+  Viewer,
+} from "cesium";
 
 import TileStyleManager from "./js/TileStyleManager.js";
 
+import { flightData } from "./js/FlightData";
+
 import { accessToken, assetIds } from "./js/CesiumConfig.js";
+import { MovingObject } from "./js/MovingObject.js";
 
 Ion.defaultAccessToken = accessToken;
 
@@ -16,6 +25,7 @@ const viewer = new Viewer("cesiumContainer", {
   terrainProvider: await createWorldTerrainAsync(),
 });
 
+const tileSetAircraft = await IonResource.fromAssetId(assetIds.aircraft);
 const tileSetCityGml = await Cesium3DTileset.fromIonAssetId(assetIds.cityGml);
 const tileSetPointCloud = await Cesium3DTileset.fromIonAssetId(
   assetIds.pointCloud,
@@ -24,6 +34,7 @@ const tileSetBim = await Cesium3DTileset.fromIonAssetId(assetIds.bim);
 const tileSetGoogle = await Cesium3DTileset.fromIonAssetId(
   assetIds.googlePhotorealistic,
 );
+
 viewer.scene.primitives.add(tileSetCityGml);
 viewer.scene.primitives.add(tileSetPointCloud);
 viewer.scene.primitives.add(tileSetBim);
@@ -35,6 +46,8 @@ await viewer.zoomTo(tileSetCityGml);
 
 const styleManager = new TileStyleManager(tileSetCityGml, tileSetPointCloud);
 styleManager.terrainHeightStyle();
+
+tileSetAircraft.show = false;
 
 const unCheckedRadioButtons = () => {
   document
@@ -82,3 +95,9 @@ document
       tileSetCityGml.show = true;
     }
   });
+
+document.getElementById("zoomToAircraft").addEventListener("click", () => {
+  const movingObject = new MovingObject(viewer, flightData, 1, "aircraft");
+  movingObject.addMovableEntityToViewer(tileSetAircraft);
+  viewer.zoomTo(tileSetCityGml);
+});
