@@ -1,61 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Zero to Hero CesiumJS tutorial</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Zero to Hero CesiumJS tutorial</title>
+  </head>
 
-<body>
-<section class="container-fluid">
-
-  <div class="row position-relative">
-    <button class="btn btn-primary col-lg-2 col-1 position-absolute ms-3 mt-3 z-3" type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-      Filtering Config
-    </button>
-    <div id="cesiumContainer" class="h-100 p-0 m-0"></div>
-  </div>
-
-  <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-       id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">Filtering configurations</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-
-    <hr class="bold-hr" />
-
-    <div class="offcanvas-body">
-      <div class="row">
-        <div class="col-6 text-light align-items-center">Building Category</div>
-        <div class="col-6 btn-group">
-          <input type="radio" class="btn-check" name="btn-radio" id="btn-terrain" checked />
-          <label for="btn-terrain" class="btn btn-outline-primary">Terrain</label>
-          <input type="radio" class="btn-check" name="btn-radio" id="btn-roof" />
-          <label for="btn-roof" class="btn btn-outline-primary">Roof</label>
-        </div>
+  <body>
+    <section class="container-fluid">
+      <div class="row position-relative">
+        <button
+          class="btn btn-primary col-lg-2 col-1 position-absolute ms-3 mt-3 z-3"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          Filtering Config
+        </button>
+        <div id="cesiumContainer" class="h-100 p-0 m-0"></div>
       </div>
 
-      <hr class="bold-hr" />
-
-      <div class="row">
-        <div class="col-6 text-light align-items-center">
-          Point Cloud
+      <div
+        class="offcanvas offcanvas-start bg-dark"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">
+            Filtering configurations
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
 
-        <div class="col-6 text-light">
-          <div class="form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" name="classification" id="activePointCloud" />
-            <label class="form-check-label ms-3" for="activePointCloud"></label>
+        <hr class="bold-hr" />
+
+        <div class="offcanvas-body">
+          <div class="row">
+            <div class="col-6 text-light align-items-center">
+              Building Category
+            </div>
+            <div class="col-6 btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="btn-radio"
+                id="btn-terrain"
+                checked
+              />
+              <label for="btn-terrain" class="btn btn-outline-primary"
+                >Terrain</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btn-radio"
+                id="btn-roof"
+              />
+              <label for="btn-roof" class="btn btn-outline-primary">Roof</label>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row">
+            <div class="col-6 text-light align-items-center">Point Cloud</div>
+
+            <div class="col-6 text-light">
+              <div class="form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  name="classification"
+                  id="isPointCloud"
+                />
+                <label class="form-check-label ms-3" for="isPointCloud"></label>
+              </div>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row">
+            <div class="col-6 text-light">BIM Data</div>
+
+            <div class="col-6 d-flex justify-content-start align-items-center">
+              <div class="form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  name="classification"
+                  id="isBIMData"
+                  checked
+                />
+                <label class="form-check-label ms-3" for="isBIMData"></label>
+              </div>
+              <button class="btn btn-primary" type="button" id="zoomToBIM">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
-    </div>
-  </div>
-
-</section>
-</body>
+    </section>
+  </body>
 </html>

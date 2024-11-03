@@ -20,8 +20,10 @@ const tileSetCityGml = await Cesium3DTileset.fromIonAssetId(assetIds.cityGml);
 const tileSetPointCloud = await Cesium3DTileset.fromIonAssetId(
   assetIds.pointCloud,
 );
+const tileSetBim = await Cesium3DTileset.fromIonAssetId(assetIds.bim);
 viewer.scene.primitives.add(tileSetCityGml);
 viewer.scene.primitives.add(tileSetPointCloud);
+viewer.scene.primitives.add(tileSetBim);
 tileSetPointCloud.show = false;
 
 await viewer.zoomTo(tileSetCityGml);
@@ -47,13 +49,19 @@ document.getElementById("btn-roof").addEventListener("click", () => {
   styleManager.roofTypeStyle();
 });
 
-document
-  .getElementById("activePointCloud")
-  .addEventListener("change", (event) => {
-    if (event.target.checked) {
-      tileSetPointCloud.show = true;
-      styleManager.pointCloudStyle();
-    } else {
-      tileSetPointCloud.show = false;
-    }
-  });
+document.getElementById("isPointCloud").addEventListener("change", (event) => {
+  if (event.target.checked) {
+    tileSetPointCloud.show = true;
+    styleManager.pointCloudStyle();
+  } else {
+    tileSetPointCloud.show = false;
+  }
+});
+
+document.getElementById("zoomToBIM").addEventListener("click", () => {
+  viewer.zoomTo(tileSetBim);
+});
+
+document.getElementById("isBIMData").addEventListener("change", (event) => {
+  tileSetBim.show = !!event.target.checked;
+});
