@@ -8,15 +8,17 @@
   <body>
     <section class="container-fluid">
       <div class="row position-relative">
-        <button
-          class="btn btn-primary col-lg-2 col-1 position-absolute ms-3 mt-3 z-3"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrolling"
-          aria-controls="offcanvasScrolling"
-        >
-          Filtering Config
-        </button>
+        <div class="position-absolute ms-3 mt-3 z-3">
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <i class="bi bi-gear-fill h5"></i>
+          </button>
+        </div>
         <div id="cesiumContainer" class="h-100 p-0 m-0"></div>
       </div>
 
@@ -40,10 +42,10 @@
           ></button>
         </div>
 
-        <hr class="bold-hr" />
-
         <div class="offcanvas-body">
-          <div class="row">
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
             <div class="col-6 text-light align-items-center">
               Building Category
             </div>
@@ -70,7 +72,7 @@
 
           <hr class="bold-hr" />
 
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6 text-light align-items-center">Point Cloud</div>
 
             <div class="col-6 text-light">
@@ -89,7 +91,7 @@
 
           <hr class="bold-hr" />
 
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6 text-light">BIM Data</div>
 
             <div class="col-6 d-flex justify-content-start align-items-center">
@@ -109,14 +111,14 @@
                 type="button"
                 id="zoomToBIM"
               >
-                <i class="bi bi-zoom-in"></i>
+                <i class="bi bi-zoom-in h5"></i>
               </button>
             </div>
           </div>
 
           <hr class="bold-hr" />
 
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6 text-light">Google Photorealistic 3D Tiles</div>
             <div class="col-6">
               <div class="form-switch">
@@ -137,7 +139,7 @@
 
           <hr class="bold-hr" />
 
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6 text-light">Aircraft</div>
             <div class="col-6">
               <button
@@ -145,7 +147,22 @@
                 type="button"
                 id="zoomToAircraft"
               >
-                <i class="bi bi-zoom-in"></i>
+                <i class="bi bi-zoom-in h5"></i>
+              </button>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light">Fetch/Update Entities</div>
+            <div class="col-6">
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                id="fetchData"
+              >
+                <i class="bi bi-arrow-clockwise h5"></i>
               </button>
             </div>
           </div>
