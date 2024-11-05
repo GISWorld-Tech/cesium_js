@@ -15,7 +15,6 @@ import {
 
 import { accessToken, assetIds } from "./js/CesiumConfig.js";
 import { convertLineToPoints } from "./js/ConvertLineToPoint";
-import { addPoint } from "./js/EntityType";
 
 import { flightData } from "./js/FlightData";
 import { MovingObject } from "./js/MovingObject.js";
@@ -30,55 +29,51 @@ const viewer = new Viewer("cesiumContainer", {
 
 const resources = {
   aircraft: await IonResource.fromAssetId(assetIds.aircraft),
-  bus_station: await IonResource.fromAssetId(assetIds.bus_station),
   bus: await IonResource.fromAssetId(assetIds.bus),
   car: await IonResource.fromAssetId(assetIds.car),
-  tree: await IonResource.fromAssetId(assetIds.tree),
 };
 
-const tileSetCityGml = await Cesium3DTileset.fromIonAssetId(assetIds.cityGml);
-const tileSetPointCloud = await Cesium3DTileset.fromIonAssetId(
-  assetIds.pointCloud,
+const tileSet = {
+  cityGml: await Cesium3DTileset.fromIonAssetId(assetIds.cityGml),
+  pointCloud: await Cesium3DTileset.fromIonAssetId(assetIds.pointCloud),
+  bim: await Cesium3DTileset.fromIonAssetId(assetIds.bim),
+  googlePhotorealistic: await Cesium3DTileset.fromIonAssetId(
+    assetIds.googlePhotorealistic,
+  ),
+};
+
+[tileSet.cityGml, tileSet.pointCloud, tileSet.googlePhotorealistic].forEach(
+  (tileSet) => viewer.scene.primitives.add(tileSet),
 );
-const tileSetBim = await Cesium3DTileset.fromIonAssetId(assetIds.bim);
-const tileSetGoogle = await Cesium3DTileset.fromIonAssetId(
-  assetIds.googlePhotorealistic,
-);
+tileSet.pointCloud.show = false;
+tileSet.googlePhotorealistic.show = false;
 
-viewer.scene.primitives.add(tileSetCityGml);
-viewer.scene.primitives.add(tileSetPointCloud);
-viewer.scene.primitives.add(tileSetBim);
-viewer.scene.primitives.add(tileSetGoogle);
-tileSetPointCloud.show = false;
-tileSetGoogle.show = false;
+await viewer.zoomTo(tileSet.cityGml);
 
-await viewer.zoomTo(tileSetCityGml);
-
-const styleManager = new TileStyleManager(tileSetCityGml, tileSetPointCloud);
+const styleManager = new TileStyleManager(tileSet.cityGml, tileSet.pointCloud);
 styleManager.terrainHeightStyle();
 
 const apiLineStringUrl =
   "https://gisworld-tech.com/cesium/linestring/?project_id=part_10";
-const apiPointUrl =
-  "https://gisworld-tech.com/cesium/point/?project_id=part_10";
 
 const fetchAllData = (update = false) => {
   axios
-    .all([axios.get(apiLineStringUrl), axios.get(apiPointUrl)])
-    .then(
-      axios.spread((response1, response2) => {
-        // update && viewer.entities.removeAll();
-        const busPath = convertLineToPoints(response1.data.features[0]);
-        const movingObjectBus = new MovingObject(viewer, busPath, 10, "bus");
-        movingObjectBus.addMovableEntityToViewer(resources.bus);
-        addPoint(viewer, response2.data.features, resources);
-        !update && viewer.zoomTo(viewer.entities);
-      }),
-    )
+    .get(apiLineStringUrl)
+    .then((response) => {
+      viewer.entities.removeAll();
+      response.data.features.forEach((feature) => {
+        const busPath = convertLineToPoints(feature);
+        const movingObject = new MovingObject(viewer, busPath, 10, "bus");
+        movingObject.addMovableEntityToViewer(
+          resources[feature.properties.usage],
+          "car",
+          feature.id,
+        );
+      });
+      !update && viewer.zoomTo(viewer.entities);
+    })
     .catch((error) => console.log(error));
 };
-
-fetchAllData();
 
 document
   .getElementById("fetchData")
@@ -91,48 +86,48 @@ const unCheckedRadioButtons = () => {
 };
 
 document.getElementById("btn-terrain").addEventListener("click", () => {
-  tileSetPointCloud.show = false;
+  tileSet.pointCloud.show = false;
   unCheckedRadioButtons();
   styleManager.terrainHeightStyle();
 });
 
 document.getElementById("btn-roof").addEventListener("click", () => {
-  tileSetPointCloud.show = false;
+  tileSet.pointCloud.show = false;
   unCheckedRadioButtons();
   styleManager.roofTypeStyle();
 });
 
 document.getElementById("isPointCloud").addEventListener("change", (event) => {
   if (event.target.checked) {
-    tileSetPointCloud.show = true;
+    tileSet.pointCloud.show = true;
     styleManager.pointCloudStyle();
   } else {
-    tileSetPointCloud.show = false;
+    tileSet.pointCloud.show = false;
   }
 });
 
 document.getElementById("zoomToBIM").addEventListener("click", () => {
-  viewer.zoomTo(tileSetBim);
+  viewer.zoomTo(tileSet.bim);
 });
 
 document.getElementById("isBIMData").addEventListener("change", (event) => {
-  tileSetBim.show = !!event.target.checked;
+  viewer.scene.primitives.add(tileSet.bim);
+  tileSet.bim.show = !!event.target.checked;
 });
 
 document
   .getElementById("isGooglePhotorealistic")
   .addEventListener("change", (event) => {
     if (event.target.checked) {
-      tileSetGoogle.show = true;
-      tileSetCityGml.show = false;
+      tileSet.googlePhotorealistic.show = true;
+      tileSet.cityGml.show = false;
     } else {
-      tileSetGoogle.show = false;
-      tileSetCityGml.show = true;
+      tileSet.googlePhotorealistic.show = false;
+      tileSet.cityGml.show = true;
     }
   });
 
 document.getElementById("zoomToAircraft").addEventListener("click", () => {
   const movingObject = new MovingObject(viewer, flightData, 1, "aircraft");
   movingObject.addMovableEntityToViewer(resources.aircraft);
-  viewer.zoomTo(tileSetCityGml);
 });

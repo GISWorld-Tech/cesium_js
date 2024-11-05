@@ -8,10 +8,8 @@ const assetIds = {
   bim: 2802103,
   googlePhotorealistic: 2275207,
   aircraft: 2656960,
-  bus_station: 2802124,
-  bus: 2802123,
+  bus: 2804973,
   car: 2780316,
-  tree: 2780318,
 };
 
 export { accessToken, assetIds };

@@ -1,10 +1,7 @@
 import {
   Cartesian3,
   Cartographic,
-  Color,
-  HeadingPitchRange,
   JulianDate,
-  Math,
   SampledPositionProperty,
   sampleTerrainMostDetailed,
   TimeInterval,
@@ -15,22 +12,22 @@ import {
 export class MovingObject {
   constructor(
     viewer,
-    flightData,
+    pathData,
     timeStepInSeconds,
     objType = "aircraft",
     height = 0,
     speed = 2,
   ) {
     this.viewer = viewer;
-    this.filghtData = flightData;
+    this.pathData = pathData;
     this.timeStepInSeconds = timeStepInSeconds;
     this.height = height;
     this.objType = objType;
     this.speed = speed;
-    this.start = JulianDate.fromIso8601("2024-06-10T23:10:00Z");
+    this.start = JulianDate.fromIso8601("2024-06-10T13:10:00Z");
     this.stop = JulianDate.addSeconds(
       this.start,
-      this.filghtData.features.length * this.timeStepInSeconds,
+      this.pathData.features.length * this.timeStepInSeconds,
       new JulianDate(),
     );
     this._confingTime();
@@ -48,7 +45,7 @@ export class MovingObject {
   };
 
   _computeTimePositionAdjustment = async () => {
-    const positions = this.filghtData.features.map((feature) => {
+    const positions = this.pathData.features.map((feature) => {
       const lon = feature.geometry.coordinates[0];
       const lat = feature.geometry.coordinates[1];
       this.height = feature.properties.height;
@@ -72,31 +69,20 @@ export class MovingObject {
           : cartographic.height,
       );
       this.positionProperty.addSample(time, position);
-      const pointEntity = this.viewer.entities.add({
-        description: `Location: (${cartographic.longitude}, ${cartographic.latitude}, ${cartographic.height})`,
-        position: position,
-        point: { pixelSize: 5, color: Color.RED },
-      });
-
-      this.viewer.flyTo(pointEntity, {
-        offset: new HeadingPitchRange(
-          Math.toRadians(0), // Heading
-          Math.toRadians(-30), // Pitch
-          250, // Distance
-        ),
-      });
     });
   };
 
-  addMovableEntityToViewer = (uri) => {
+  addMovableEntityToViewer = (uri, featureName, featureId) => {
+    console.log(featureId, featureName);
     this.viewer.entities.add({
       availability: new TimeIntervalCollection([
         new TimeInterval({ start: this.start, stop: this.stop }),
       ]),
       position: this.positionProperty,
-      model: { uri: uri },
+      model: { uri: uri, id: featureName + "_" + featureId },
       orientation: new VelocityOrientationProperty(this.positionProperty),
-      viewFrom: new Cartesian3(-100, 0, 100),
+      viewFrom: new Cartesian3(-50, 0, 90),
     });
+    this.viewer.zoomTo(this.viewer.entities);
   };
 }
