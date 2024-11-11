@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zero-to-Hero CesiumJS Tutorial</title>
+  </head>
+
+  <body>
+    <section class="container-fluid">
+      <div class="row position-relative">
+        <div class="position-absolute ms-3 mt-3 z-3">
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <i class="bi bi-gear-fill h5"></i>
+          </button>
+        </div>
+        <div id="cesiumContainer" class="h-100 p-0 m-0"></div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start bg-dark"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">
+            Filtering configurations
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light align-items-center">
+              Building Category
+            </div>
+            <div class="col-6 btn-group">
+              <input
+                type="radio"
+                class="btn-check"
+                name="btn-radio"
+                id="btn-terrain"
+                checked
+              />
+              <label for="btn-terrain" class="btn btn-outline-primary"
+                >Terrain</label
+              >
+              <input
+                type="radio"
+                class="btn-check"
+                name="btn-radio"
+                id="btn-roof"
+              />
+              <label for="btn-roof" class="btn btn-outline-primary">Roof</label>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light align-items-center">Point Cloud</div>
+
+            <div class="col-6 text-light">
+              <div class="form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  name="classification"
+                  id="isPointCloud"
+                />
+                <label class="form-check-label ms-3" for="isPointCloud"></label>
+              </div>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light">BIM Data</div>
+
+            <div class="col-6 d-flex justify-content-start align-items-center">
+              <div class="form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  name="classification"
+                  id="isBIMData"
+                />
+                <label class="form-check-label ms-3" for="isBIMData"></label>
+              </div>
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                id="zoomToBIM"
+              >
+                <i class="bi bi-zoom-in h5"></i>
+              </button>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light">Google Photorealistic 3D Tiles</div>
+            <div class="col-6">
+              <div class="form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  name="classification"
+                  id="isGooglePhotorealistic"
+                />
+                <label
+                  class="form-check-label ms-3"
+                  for="isGooglePhotorealistic"
+                ></label>
+              </div>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light">Aircraft</div>
+            <div class="col-6">
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                id="zoomToAircraft"
+              >
+                <i class="bi bi-zoom-in h5"></i>
+              </button>
+            </div>
+          </div>
+
+          <hr class="bold-hr" />
+
+          <div class="row align-items-center">
+            <div class="col-6 text-light">Fetch/Update Entities</div>
+            <div class="col-6">
+              <button
+                class="btn btn-outline-primary"
+                type="button"
+                id="fetchData"
+              >
+                <i class="bi bi-arrow-clockwise h5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
