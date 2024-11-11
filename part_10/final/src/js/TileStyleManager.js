@@ -49,6 +49,7 @@ export default class TileStyleManager {
     this.applyStyle(this.tileSetCityGml, colorConditions);
   };
 
+  // TODO 4.1 filter and set style to all the point cloud data that the Classification in 1 (green) or 9 (lightblue)
   pointCloudStyle = () => {
     const colorCondition = [
       ["${Classification} === 1", "color('green')"],
