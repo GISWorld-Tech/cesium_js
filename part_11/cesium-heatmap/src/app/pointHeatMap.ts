@@ -1,4 +1,4 @@
-import { HeatmapPoint } from "../components/Heatmap.tsx";
+import { HeatmapPoint } from "../types";
 
 export const heatmapPoints: HeatmapPoint[] = [
   {
